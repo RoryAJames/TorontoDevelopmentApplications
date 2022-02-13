@@ -26,7 +26,7 @@ Data for this project was collected from the [City of Toronto Open Data Portal](
 
 - I arbitrarily decided to only look at applications that have been applied for on or after May 3rd 2017. I chose this date because it was the day that the Toronto Local Appeal Body (TLAB) came into effect.
   
-- My definition of a denied application includes those that are currently under appeal or received an approval following an appeal. The reason for this is that the application was initially denied by council. I know that applications can be appealed because a decision on the application was not made in the period 
+- My definition of denied applications include those that are currently under appeal, or received an approval following an appeal. The reason for this is that the application was initially denied by council, and therefore should be labeled as such. I know there are applications that are appealed because a decision was not made in the alloted application review time set forth by the Planning Act. However, based on the way the data is presented I have no idea 
 
 ## Data Wrangling
 
@@ -38,7 +38,7 @@ Here is an overview of the major data wrangling steps I performed:
    
 - Geocoded applications based on their address using Nominatim. 
    
-- sdfsd
+- 
 
 ## Exploratory Data Analysis - Key Findings
 
