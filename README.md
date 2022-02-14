@@ -47,6 +47,4 @@ Here is an overview of the major data wrangling steps I performed:
 
 Two types of statistical tests were performed to determine whether features would make for good predictors in determining an applications approval. Chi-square tests were performed on each of the categorical features, while a logistic regression model was fit on all of the numerical features.
 
-A link to the notebook with all of my exploratory data analysis steps can be found [here](https://github.com/RoryAJames/TorontoDevelopmentApplications/blob/2fa5b0b013ca5b32528224c76f1ebad0dc1d6bfa/Exploratory%20Data%20Analysis.ipynb).
-
 ## Lessons That I Learned
