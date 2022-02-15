@@ -1,3 +1,4 @@
+from sklearn import neighbors
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -13,9 +14,20 @@ df = get_data()
 st.title('Development Applications in the City of Toronto')
 st.markdown('Welcome to this interactive app that allows users to explore development application in the City of Toronto')
 
-status = st.sidebar.radio("Status", df.Status.unique())
-council = st.sidebar.radio("Council", df.Council.unique())
-num_properties = st.sidebar.radio("Number of Properties", df.Number_of_Properties.unique())
-application_choice = st.sidebar.multiselect("Application Type",['Consent','Minor Variance', 'Official Plan Rezoning', 'Site Plan Application'])
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    status = st.radio("Status", df.Status.unique())
+
+with col2:
+    council = st.radio("Council", df.Council.unique())
+
+with col3:
+    consent = st.radio("Consent", df.Consent.unique())
+
+
+df = df[df['Status'] == status]
+df = df[df['Council'] == council]
+df = df[df['Consent'] == consent]
 
 st.map(df)
