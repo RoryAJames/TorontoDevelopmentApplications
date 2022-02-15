@@ -31,3 +31,4 @@ df = df[df['Council'] == council]
 df = df[df['Consent'] == consent]
 
 st.map(df)
+st.write(df)
