@@ -1,4 +1,3 @@
-from sklearn import neighbors
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -12,23 +11,30 @@ def get_data():
 df = get_data()
 
 st.title('Development Applications in the City of Toronto')
-st.markdown('Welcome to this interactive app that allows users to explore development application in the City of Toronto')
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    status = st.radio("Status", df.Status.unique())
+    status = st.multiselect("Status", df.Status.unique(),
+    default=df.Status.unique())
 
 with col2:
-    council = st.radio("Council", df.Council.unique())
+    council = st.multiselect("Council", df.Council.unique(),
+    default=df.Council.unique())
 
 with col3:
-    consent = st.radio("Consent", df.Consent.unique())
+    
+    consent = st.selectbox("Consent", ('Yes','No'))
+
+if consent == 'Yes':
+    consent = 1
+else: 
+    consent = 0
 
 
-df = df[df['Status'] == status]
-df = df[df['Council'] == council]
-df = df[df['Consent'] == consent]
 
-st.map(df)
-st.write(df)
+
+#Query the data based on the user parameters
+df_selection = df.query("Status == @status & Council == @council & Consent == @consent" )
+
+st.map(df_selection)
