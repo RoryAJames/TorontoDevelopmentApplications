@@ -23,15 +23,12 @@ with col2:
     default=df.Council.unique())
 
 with col3:
-    
     consent = st.selectbox("Consent", ('Yes','No'))
 
 if consent == 'Yes':
     consent = 1
 else: 
     consent = 0
-
-
 
 
 #Query the data based on the user parameters
