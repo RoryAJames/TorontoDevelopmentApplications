@@ -4,9 +4,7 @@ import numpy as np
 
 @st.cache
 def get_data():
-    df = pd.read_excel('data/combined_files_output.xlsx')
-    df = df.rename(columns={'Latitude':'lat','Longitude':'lon',
-    'Minor Variance': 'Minor_Variance'}) 
+    df = pd.read_csv('data\explore_page_data.csv')
     return df
 
 df = get_data()
