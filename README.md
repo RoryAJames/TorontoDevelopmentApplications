@@ -44,8 +44,6 @@ Here is an overview of the major data wrangling steps I performed:
    
 - Latitude and longitude were extracted from each application by geocoding the applications address using Nominatim.
 
-- 
-
 ## Exploratory Data Analysis - Key Findings
 
 Two types of statistical tests were conducted to determine which features should be included in predicting an applications status. Chi-square tests were performed on each of the categorical features, while a logistic regression model was fit on all of the numerical features.
