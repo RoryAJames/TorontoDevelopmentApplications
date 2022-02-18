@@ -46,8 +46,8 @@ def show_explore_page():
         minor_variance = 1
     else:
         minor_variance = 0
-    
 
+        
     ##### Need to update the names of official plan and site plan with _
     
     
