@@ -1,3 +1,4 @@
+from email.mime import application
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -29,28 +30,32 @@ def show_explore_page():
 
  ## Row 2   
 
-    row2_col1, row2_col2, row2_col3 = st.columns([0.6, 1, 2])
+    row2_col1, row2_col2 = st.columns([1, 2])
 
     with row2_col1:
-        consent = st.selectbox("Consent", ('Yes','No'))
+        application_type = st.multiselect("Application Type", ('Consent','Minor Variance',
+        'Official Plan Rezoning', 'Site Plan Application'))
 
-    if consent == 'Yes':
+    
+    if 'Consent' in application_type:
         consent = 1
-    else: 
+    else:
         consent = 0
-
-    with row2_col2:
-        minor_variance = st.selectbox("Minor Variance", ('Yes','No'))
-
-    if minor_variance == 'Yes':
+    
+    if 'Minor Variance' in application_type:
         minor_variance = 1
-    else: 
+    else:
         minor_variance = 0
+    
 
-    with row2_col3:
+    ##### Need to update the names of official plan and site plan with _
+    
+    
+    with row2_col2:
         house_in_need = st.slider("Number of Households In Core Housing Need",value=(100,6000))
         house_in_need_lower = house_in_need[0]
         house_in_need_upper = house_in_need[1]
+    
 
 #Query the data based on the user parameters
     df_selection = df.query('''
