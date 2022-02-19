@@ -1,4 +1,3 @@
-from email.mime import application
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -66,7 +65,7 @@ def show_explore_page():
         average_income_upper = average_income[1]
     
 
-#Query the data based on the user parameters
+#Query the data based on the users selection parameters
     df_selection = df.query('''
     Status == @status \
     & Number_of_Properties == @num_props \

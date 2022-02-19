@@ -13,4 +13,5 @@ elif page == "Explore":
 else:
     show_predict_page()
 
-st.sidebar.info("Built Using Streamlit!")
+st.sidebar.info('[Click here to see the source code!](https://github.com/RoryAJames/TorontoDevelopmentApplications)')
+st.sidebar.info('[Click here to see other projects I have worked on!](https://github.com/RoryAJames)')
