@@ -61,9 +61,9 @@ def show_explore_page():
         site_plan = 0
         
     with row2_col2:
-        house_in_need = st.slider("Show Applications In Range of Households In Core Housing Need",value=(100,6000))
-        house_in_need_lower = house_in_need[0]
-        house_in_need_upper = house_in_need[1]
+        average_income = st.slider("Show Applications In Range of Neighbourhood Average Income",value=(25000,350000))
+        average_income_lower = average_income[0]
+        average_income_upper = average_income[1]
     
 
 #Query the data based on the user parameters
@@ -75,8 +75,8 @@ def show_explore_page():
     & Minor_Variance == @minor_variance \
     & Official_Plan_Rezoning == @official_plan \
     & Site_Plan_Application == @site_plan \
-    & Households_In_Core_Housing_Need >= @house_in_need_lower \
-    & Households_In_Core_Housing_Need <= @house_in_need_upper\
+    & Average_Income >= @average_income_lower \
+    & Average_Income <= @average_income_upper\
     ''')
 
     st.subheader(f"**There are {len(df_selection)} applications that meet these parameters.**")

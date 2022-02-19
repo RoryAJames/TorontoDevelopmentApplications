@@ -60,7 +60,7 @@ These tests showed that the following features were statistically significant, a
   
 - Whether the application is located in a site or area that has a specific policy.
   
-- The number of households deemed to be in core housing need in the neighbourhood that the application is located in.
+- The average income of the neighbourhood that the application is located in.
 
 I will note that neighbourhoods were found to be statistically significant in predicting an applications status. However there are 132 neighbourhoods in Toronto. Including this as a feature would greatly increase the models complexity and dimensionality. Since neighbourhoods can be consolidated down to councils, I opted for not including it as a feature in the prediction model.
 
