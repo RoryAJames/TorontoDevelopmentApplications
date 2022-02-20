@@ -14,8 +14,6 @@ df = get_data()
 def show_explore_page():
 
     st.title('Explore Development Applications In The City of Toronto')
-    st.write('Note - This dashboard only shows applications based on their status as of May 3rd 2017.')
-    st.write('')
 
 ##Row 1
     row1_col1, row1_col2, row1_col3 = st.columns([1, 1.5, 2])
@@ -78,5 +76,9 @@ def show_explore_page():
     & Average_Income <= @average_income_upper\
     ''')
 
-    st.subheader(f"**There are {len(df_selection)} applications that meet these parameters.**")
+    if len(df_selection) == 1:
+        st.subheader("**Only one application meets these parameters.**")
+    else:
+        st.subheader(f"**There are {len(df_selection)} applications meet these parameters.**")
+    
     st.map(df_selection)
