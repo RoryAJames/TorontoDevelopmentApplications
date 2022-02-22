@@ -34,6 +34,7 @@
 33,Approved,One Property,1,0,0,0,43.75202,-79.333084,North York Community Council,42516,0,0,0,Residential Apartment
 34,Approved,One Property,1,0,0,0,43.6059514,-79.5372705,Etobicoke York Community Council,47709,0,0,0,Residential
 35,Denied,More Than One Property,0,0,1,0,43.6885785,-79.29671426419729,Toronto and East York Community Council,54324,0,0,0,Employment Industrial
+36,Approved,One Property,1,0,0,0,43.650306,-79.370379,Toronto and East York Community Council,58915,1,1,0,Commercial Residential Employment
 37,Denied,One Property,0,1,0,0,43.7432464,-79.4148042,North York Community Council,123077,0,0,0,Residential
 38,Approved,One Property,0,0,0,1,43.7711681,-79.2650736,Scarborough Community Council,33256,0,0,0,Employment Industrial
 39,Approved,More Than One Property,0,1,0,0,43.7073677,-79.3755875,North York Community Council,125564,0,1,0,Commercial Residential
@@ -58,10 +59,12 @@
 59,Denied,More Than One Property,0,1,0,0,43.648748,-79.55025235,Etobicoke York Community Council,52787,0,0,0,Residential
 60,Denied,One Property,0,1,0,0,43.7350773,-79.4372096,North York Community Council,51181,0,0,0,Residential
 61,Denied,One Property,0,1,0,0,43.58890842987636,-79.54156243205487,Etobicoke York Community Council,47384,0,0,0,Residential
+62,Denied,One Property,0,1,0,0,43.6479552,-79.4123876,Toronto and East York Community Council,50694,0,0,0,Open Space
 63,Approved,One Property,1,0,0,0,43.70095853740091,-79.4936760110628,Etobicoke York Community Council,32483,0,0,0,Residential
 64,Approved,One Property,0,0,0,1,43.68237665,-79.40601524068461,Toronto and East York Community Council,165047,0,0,0,Residential
 65,Approved,One Property,0,0,0,1,43.7599222,-79.4187515,North York Community Council,72371,1,0,0,Commercial Residential
 66,Approved,One Property,0,0,0,1,43.7501389,-79.5520129,Etobicoke York Community Council,30731,0,1,0,Employment Industrial
+67,Approved,One Property,0,0,0,1,43.774283,-79.5019475,Etobicoke York Community Council,29958,1,0,0,Institutional
 68,Denied,More Than One Property,0,0,1,0,43.648967,-79.53035559285715,Etobicoke York Community Council,52787,0,0,0,Residential
 69,Denied,One Property,0,1,0,0,43.67245265,-79.413168625,Toronto and East York Community Council,112766,0,0,0,Residential
 70,Approved,One Property,0,1,0,0,43.68895276594892,-79.42668668553243,Toronto and East York Community Council,65274,0,0,0,Residential
@@ -79,6 +82,7 @@
 82,Approved,One Property,1,0,0,0,43.7566954875,-79.41644580625,North York Community Council,72371,0,0,0,Residential
 83,Approved,More Than One Property,0,0,1,0,43.654287,-79.3982905,Toronto and East York Community Council,37422,0,1,1,Commercial Residential
 84,Denied,One Property,0,1,0,0,43.71476286153846,-79.23268895384615,Scarborough Community Council,44718,0,0,0,Residential
+85,Approved,More Than One Property,1,0,0,0,43.63757335,-79.4887241306312,Etobicoke York Community Council,64140,0,0,0,Commercial
 86,Denied,One Property,0,1,0,0,43.6852188,-79.4480884,Toronto and East York Community Council,35112,0,0,0,Residential
 87,Approved,One Property,1,0,0,0,43.7257573,-79.4159416,North York Community Council,123077,0,0,0,Residential
 88,Approved,One Property,0,1,0,0,43.78615730460904,-79.35880632202253,North York Community Council,37379,0,0,0,Residential
@@ -97,6 +101,7 @@
 102,Denied,One Property,0,1,0,0,43.651015,-79.5153033,Etobicoke York Community Council,144642,0,0,0,Residential
 103,Approved,One Property,1,1,0,0,43.72188172,-79.41806627999999,North York Community Council,123077,0,0,0,Residential
 104,Denied,One Property,1,1,0,0,43.631417,-79.51674291798797,Etobicoke York Community Council,64140,0,0,0,Residential
+105,Approved,More Than One Property,0,0,0,1,43.6459356,-79.3995823,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 107,Approved,One Property,0,1,0,0,43.75761894453635,-79.48376040361109,North York Community Council,29958,0,1,0,Employment Industrial
 108,Denied,More Than One Property,0,0,1,0,43.62392935,-79.5120853,Etobicoke York Community Council,64140,0,1,0,Commercial Residential
 109,Approved,More Than One Property,1,0,0,0,43.763752,-79.408949,North York Community Council,45326,1,1,0,Commercial Residential
@@ -106,6 +111,7 @@
 113,Denied,More Than One Property,0,0,1,0,43.674218,-79.3995879,Toronto and East York Community Council,112766,0,0,0,Commercial Residential
 114,Denied,One Property,0,1,0,0,43.66399273846154,-79.3685558076923,Toronto and East York Community Council,58915,0,1,0,Commercial Residential
 115,Denied,More Than One Property,0,0,1,0,43.6007434,-79.50620830104577,Etobicoke York Community Council,44101,0,1,1,Commercial Residential
+116,Approved,More Than One Property,0,0,1,0,43.64837,-79.391756,Toronto and East York Community Council,70600,1,1,0,Commercial Residential Employment
 117,Approved,One Property,1,0,0,0,43.8034881,-79.1924159,Scarborough Community Council,39556,0,0,0,Employment Industrial
 118,Denied,One Property,0,1,0,0,43.5889243,-79.5363561,Etobicoke York Community Council,47384,0,0,0,Residential
 119,Approved,One Property,0,1,0,0,43.6623267275862,-79.34302672068965,Toronto and East York Community Council,53803,0,0,0,Residential
@@ -138,24 +144,29 @@
 145,Approved,One Property,1,0,0,0,43.59337486293245,-79.53519027499974,Etobicoke York Community Council,47384,0,0,0,Residential
 146,Approved,More Than One Property,1,0,0,0,43.66712199459459,-79.31886712972972,Toronto and East York Community Council,46206,0,0,0,Residential
 147,Approved,One Property,1,1,0,0,43.61867585,-79.53847984999999,Etobicoke York Community Council,52787,0,0,0,Employment Industrial
+148,Approved,More Than One Property,0,0,0,1,43.6192878,-79.5213549,Etobicoke York Community Council,52787,0,0,0,Utility and Transportation
 149,Approved,One Property,0,0,0,1,43.662297,-79.51958350008272,Etobicoke York Community Council,101551,0,0,0,Commercial Residential
 150,Denied,More Than One Property,0,0,1,0,43.72397536666666,-79.49460066666667,North York Community Council,34168,0,0,0,Residential
 152,Approved,One Property,1,0,0,0,43.6863079,-79.4745942,Etobicoke York Community Council,33316,0,0,0,Residential
 153,Approved,One Property,0,1,0,0,43.6957965,-79.3713726,North York Community Council,125564,0,0,0,Residential
+154,Denied,More Than One Property,0,0,1,0,43.7221452,-79.2362324,Scarborough Community Council,44718,0,0,0,Commercial
 155,Denied,More Than One Property,0,0,1,0,43.66660245,-79.52009065,Etobicoke York Community Council,101551,0,0,0,Residential
 156,Approved,More Than One Property,0,0,0,1,43.7080816625,-79.4440181,North York Community Council,38527,0,0,0,Commercial Residential
 157,Approved,One Property,1,0,0,0,43.71391245497914,-79.5710041254575,Etobicoke York Community Council,31771,0,0,0,Employment Industrial
 158,Approved,One Property,0,0,0,1,43.67596899999999,-79.45323371234998,Toronto and East York Community Council,41717,0,1,0,Commercial Residential
+159,Approved,One Property,0,0,1,0,43.7542243,-79.26076075427174,Scarborough Community Council,33256,0,0,0,Institutional
 160,Approved,More Than One Property,0,0,1,0,43.68437893333333,-79.39986880000001,Toronto and East York Community Council,114174,1,0,0,Residential
 161,Approved,One Property,1,1,0,0,43.72203502,-79.41730747999999,North York Community Council,123077,0,0,0,Residential
 162,Approved,One Property,0,1,0,0,43.72649745720962,-79.43761913143379,North York Community Council,48134,1,0,0,Residential
 163,Denied,More Than One Property,0,0,1,0,43.783427715,-79.398227365,North York Community Council,45326,1,0,0,Residential
+164,Approved,More Than One Property,0,0,1,0,43.650519,-79.367736,Toronto and East York Community Council,58915,1,1,0,Commercial Residential Employment
 165,Denied,One Property,0,0,1,0,43.66724044999999,-79.38804306227188,Toronto and East York Community Council,56526,0,0,1,Commercial Residential
 166,Approved,More Than One Property,0,0,0,1,43.6954562,-79.4527991,North York Community Council,34768,0,1,0,Commercial Residential
 167,Approved,One Property,0,1,0,0,43.7799868,-79.3762165,North York Community Council,52035,0,0,0,Residential
 168,Approved,One Property,0,1,0,0,43.75515189337593,-79.38874608204375,North York Community Council,100516,0,0,0,Residential
 169,Approved,One Property,1,0,0,0,43.69348455294118,-79.44081675294117,Toronto and East York Community Council,39803,0,1,0,Commercial Residential
 170,Approved,One Property,1,0,0,0,43.60258376666666,-79.50245223333333,Etobicoke York Community Council,44101,0,0,0,Residential
+171,Approved,One Property,0,0,0,1,43.6658867,-79.4220276,Toronto and East York Community Council,39740,0,0,0,Open Space
 172,Approved,One Property,0,0,0,1,43.63500685,-79.49245814956768,Etobicoke York Community Council,64140,0,0,0,Residential Apartment
 173,Denied,More Than One Property,0,0,1,0,43.687902,-79.29716332621952,Toronto and East York Community Council,54324,0,0,0,Employment Industrial
 174,Approved,One Property,0,1,0,0,43.7580528,-79.4549077,North York Community Council,45936,0,0,0,Residential
@@ -173,8 +184,11 @@
 186,Approved,More Than One Property,1,0,0,0,43.7133637,-79.2517406,Scarborough Community Council,54360,0,0,0,Residential
 187,Approved,One Property,0,0,1,0,43.795614,-79.32744173214286,Scarborough Community Council,31826,0,0,1,Residential Apartment
 188,Denied,One Property,0,1,0,0,43.71055311333333,-79.42267624666667,North York Community Council,123077,0,0,0,Residential
+189,Approved,One Property,0,0,1,0,43.6930652,-79.2889067,Scarborough Community Council,26793,0,0,0,Utility and Transportation
+190,Denied,More Than One Property,0,0,1,0,43.64480802105263,-79.39922725263158,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 191,Approved,More Than One Property,0,0,1,0,43.6501531,-79.4318291,Toronto and East York Community Council,45737,0,1,0,Commercial Residential
 192,Approved,More Than One Property,0,0,1,0,43.649799975,-79.43219145,Toronto and East York Community Council,45737,0,1,0,Commercial Residential
+194,Approved,One Property,1,0,0,0,43.74331435,-79.51437659999999,Etobicoke York Community Council,27984,0,0,0,Commercial
 195,Denied,One Property,1,1,0,0,43.6628547,-79.5001889,Toronto and East York Community Council,76629,0,0,0,Residential
 196,Approved,One Property,0,1,0,0,43.69348706666667,-79.32024886666666,Toronto and East York Community Council,51846,0,0,0,Residential
 197,Denied,More Than One Property,0,0,1,0,43.69118971666667,-79.26468557916667,Scarborough Community Council,54360,0,0,1,Commercial Residential
@@ -194,6 +208,7 @@
 211,Denied,One Property,0,0,1,0,43.599150075,-79.53161595,Etobicoke York Community Council,47709,0,0,0,Employment Industrial
 212,Denied,More Than One Property,0,0,1,0,43.72763895,-79.40307179999999,North York Community Council,111730,0,1,1,Commercial Residential
 213,Denied,One Property,0,1,0,0,43.68750366999024,-79.2733244740577,Scarborough Community Council,54360,0,0,0,Residential
+214,Denied,One Property,0,1,0,0,43.644529,-79.393144,Toronto and East York Community Council,70600,1,1,0,Commercial Residential Employment
 215,Denied,One Property,0,1,0,0,43.6910167,-79.4520872,Toronto and East York Community Council,35112,0,0,0,Residential
 216,Approved,One Property,0,1,0,0,43.6724515,-79.3988532,Toronto and East York Community Council,112766,0,0,1,Residential
 217,Approved,One Property,1,0,0,0,43.6960079,-79.31622265,Toronto and East York Community Council,47710,0,0,0,Residential
@@ -214,6 +229,7 @@
 232,Approved,One Property,1,1,0,0,43.66694716,-79.41569752,Toronto and East York Community Council,112766,0,0,0,Residential
 233,Approved,One Property,0,1,0,0,43.67964364809568,-79.38861630129878,Toronto and East York Community Council,207903,0,0,0,Residential
 234,Denied,One Property,0,1,0,0,43.71526992,-79.36615126,North York Community Council,125564,0,0,0,Residential
+235,Denied,More Than One Property,0,0,1,0,43.653821,-79.366551,Toronto and East York Community Council,58915,1,1,0,Commercial Residential Employment
 237,Approved,One Property,1,0,0,0,43.66818372941177,-79.41748205882354,Toronto and East York Community Council,112766,0,0,0,Residential
 238,Approved,One Property,1,0,0,0,43.66824182352941,-79.41750354705883,Toronto and East York Community Council,112766,0,0,0,Residential
 239,Approved,One Property,1,0,0,0,43.6892355,-79.4329708582801,Toronto and East York Community Council,65274,0,0,0,Residential
@@ -250,6 +266,7 @@
 270,Approved,One Property,1,0,0,0,43.78977333266959,-79.4123231373727,North York Community Council,45212,0,0,0,Residential
 271,Denied,One Property,0,1,0,0,43.67741380645161,-79.43151175806452,Toronto and East York Community Council,54460,0,0,0,Residential
 272,Approved,One Property,1,0,0,0,43.7105398,-79.4566068,North York Community Council,38527,0,0,0,Residential Apartment
+273,Approved,One Property,0,1,0,0,43.77534814460461,-79.35761135531214,North York Community Council,37379,1,0,0,Open Space
 274,Denied,One Property,0,1,0,0,43.64950663333333,-79.45446593333332,Toronto and East York Community Council,71204,0,0,0,Residential
 277,Approved,One Property,0,1,0,0,43.73457781163968,-79.41961887415172,North York Community Council,123077,0,0,0,Commercial Residential
 278,Denied,One Property,0,1,0,0,43.67180311911828,-79.48315175267153,Etobicoke York Community Council,34059,0,0,0,Residential
@@ -290,6 +307,7 @@
 315,Approved,One Property,0,1,0,0,43.6806843,-79.27991695,Scarborough Community Council,54360,0,0,0,Residential
 316,Approved,More Than One Property,1,0,0,0,43.68046404285714,-79.49106717142857,Etobicoke York Community Council,34059,0,0,0,Residential
 317,Approved,One Property,0,1,0,0,43.70877360692702,-79.42258798786973,North York Community Council,85099,0,0,0,Residential
+318,Approved,One Property,0,1,0,0,43.647057,-79.400254,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 319,Approved,One Property,0,1,0,0,43.65949665,-79.45684235,Toronto and East York Community Council,57465,0,0,0,Residential
 320,Denied,One Property,0,1,0,0,43.7787045,-79.23170286558135,Scarborough Community Council,30878,0,0,1,Commercial Residential
 321,Approved,One Property,0,1,0,0,43.6779405,-79.3374061,Toronto and East York Community Council,48511,0,0,0,Residential
@@ -341,7 +359,9 @@
 367,Approved,One Property,0,1,0,0,43.6514549,-79.409483,Toronto and East York Community Council,50694,0,1,0,Commercial Residential
 368,Denied,One Property,0,1,0,0,43.642464,-79.46962163913045,Toronto and East York Community Council,71204,1,0,0,Residential
 369,Denied,One Property,1,1,0,0,43.76863015,-79.40240147142858,North York Community Council,45326,0,0,0,Residential
+370,Approved,One Property,0,1,0,0,43.6730646,-79.3089136,Toronto and East York Community Council,55199,0,0,0,Open Space
 371,Approved,One Property,0,1,0,0,43.72350090860686,-79.38179357353627,North York Community Council,308010,0,0,0,Residential
+372,Approved,One Property,1,1,0,0,43.7083116,-79.5649359,Etobicoke York Community Council,31771,0,0,1,Utility and Transportation
 373,Approved,One Property,0,1,0,0,43.69864577,-79.36973837,North York Community Council,125564,0,0,0,Residential
 374,Approved,One Property,0,1,0,0,43.7255847,-79.2437581,Scarborough Community Council,44718,0,0,0,Residential
 375,Approved,One Property,0,1,0,0,43.68517181818182,-79.40625045454546,Toronto and East York Community Council,165047,0,0,0,Residential
@@ -410,6 +430,7 @@
 439,Approved,One Property,0,1,0,0,43.746504575,-79.323593675,North York Community Council,42516,0,0,0,Residential
 440,Denied,One Property,1,0,0,0,43.76970604285714,-79.42214388571429,North York Community Council,44576,0,0,0,Residential
 441,Denied,One Property,0,1,0,0,43.6586121996278,-79.52447477284164,Etobicoke York Community Council,101551,0,0,0,Residential
+442,Approved,One Property,0,0,0,1,43.8268699,-79.2392572,Scarborough Community Council,39556,1,0,0,Utility and Transportation
 443,Approved,One Property,1,0,0,0,43.741148,-79.31260577727272,North York Community Council,35786,0,0,0,Residential Apartment
 444,Approved,One Property,1,0,0,0,43.708342025,-79.29232855,Scarborough Community Council,36232,0,0,0,Residential
 445,Approved,One Property,0,1,0,0,43.7811259,-79.3230103,Scarborough Community Council,31826,0,0,0,Residential
@@ -441,7 +462,10 @@
 472,Denied,One Property,0,0,1,1,43.721132,-79.3039049,North York Community Council,35786,0,0,1,Residential Apartment
 473,Approved,One Property,0,1,0,0,43.70939626363636,-79.38210465454546,North York Community Council,85340,1,0,0,Residential
 474,Denied,One Property,0,1,0,0,43.66704175384616,-79.30068422307693,Toronto and East York Community Council,92580,0,0,0,Residential
+475,Approved,One Property,0,0,1,0,43.8065787,-79.27593664988281,Scarborough Community Council,30414,0,0,0,Institutional
 476,Denied,One Property,0,1,0,0,43.68772464713303,-79.37078898065577,Toronto and East York Community Council,207903,0,0,0,Residential
+477,Denied,One Property,0,0,1,0,43.7842498,-79.4168959,North York Community Council,34904,1,0,0,Utility and Transportation
+478,Approved,More Than One Property,1,0,0,0,43.6972369,-79.3492264,Toronto and East York Community Council,53315,0,0,0,Open Space
 479,Denied,One Property,0,1,0,0,43.72600270487805,-79.40919143658536,North York Community Council,111730,0,0,0,Residential
 480,Approved,More Than One Property,1,0,0,0,43.66620375714286,-79.36794392857142,Toronto and East York Community Council,63012,0,0,0,Residential
 481,Approved,One Property,1,0,0,0,43.790346975,-79.17122635000001,Scarborough Community Council,40972,1,0,0,Residential
@@ -451,6 +475,7 @@
 485,Approved,One Property,0,1,0,0,43.71191498292015,-79.40841243508252,North York Community Council,169203,0,0,0,Residential
 486,Approved,One Property,0,1,0,0,43.7003394,-79.363493,North York Community Council,125564,0,0,0,Residential
 487,Approved,One Property,0,1,0,0,43.7799138,-79.4271249,North York Community Council,34904,0,0,0,Residential
+488,Denied,More Than One Property,0,0,1,0,43.6457092,-79.3988524,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 489,Approved,More Than One Property,0,0,0,1,43.6715676,-79.3884266,Toronto and East York Community Council,112766,0,1,1,Commercial Residential
 489,Approved,More Than One Property,0,0,0,1,43.6715676,-79.3884266,Toronto and East York Community Council,112766,0,1,1,Commercial Residential
 490,Approved,More Than One Property,0,0,0,1,43.65907205934872,-79.44517664787205,Toronto and East York Community Council,39740,0,0,0,Employment Industrial
@@ -463,6 +488,7 @@
 498,Denied,One Property,0,0,1,1,43.6821176,-79.4070212,Toronto and East York Community Council,165047,0,0,0,Residential
 499,Approved,One Property,0,0,0,1,43.6445034,-79.41915926666667,Toronto and East York Community Council,50694,0,1,1,Commercial Residential
 499,Approved,One Property,0,0,0,1,43.6445034,-79.41915926666667,Toronto and East York Community Council,50694,0,1,1,Commercial Residential
+500,Approved,One Property,0,0,1,0,43.6577175,-79.354997,Toronto and East York Community Council,58915,1,0,0,Open Space
 501,Approved,More Than One Property,0,0,0,1,43.6666992,-79.38497100000001,Toronto and East York Community Council,53583,0,0,1,Commercial Residential
 502,Approved,One Property,1,0,0,0,43.6951663,-79.2664168,Scarborough Community Council,54360,0,0,0,Residential
 503,Approved,One Property,0,1,0,0,43.70603062103365,-79.41354648496363,North York Community Council,169203,1,0,0,Residential
@@ -520,6 +546,7 @@
 557,Denied,More Than One Property,0,0,1,0,43.65642483,-79.45285444,Toronto and East York Community Council,57465,0,1,0,Commercial Residential
 558,Denied,One Property,1,0,0,0,43.7241148,-79.4340657,North York Community Council,48134,1,0,0,Residential
 559,Denied,One Property,1,0,0,0,43.71873113633333,-79.36388394295682,North York Community Council,125564,0,0,0,Residential
+560,Approved,More Than One Property,0,0,0,1,43.6577175,-79.354997,Toronto and East York Community Council,58915,1,0,0,Open Space
 561,Approved,One Property,0,1,0,0,43.70649302857143,-79.41003008571428,North York Community Council,169203,1,0,0,Residential
 563,Denied,One Property,0,0,1,0,43.7286895,-79.28591452054795,Scarborough Community Council,35047,0,0,1,Employment Industrial
 564,Approved,One Property,0,1,0,0,43.64431018,-79.48029934,Toronto and East York Community Council,71204,1,0,0,Residential
@@ -554,6 +581,7 @@
 596,Approved,One Property,0,1,0,0,43.69988893333333,-79.53326633333333,Etobicoke York Community Council,45615,0,0,0,Residential
 597,Approved,One Property,0,1,0,0,43.7190512,-79.4761941,Etobicoke York Community Council,37108,0,0,0,Residential
 598,Approved,More Than One Property,0,1,0,0,43.6609899,-79.42506964285715,Toronto and East York Community Council,58071,0,0,0,Residential
+599,Approved,One Property,1,0,0,0,43.6578537,-79.3317951,Toronto and East York Community Council,53803,0,0,0,Open Space
 600,Approved,One Property,0,1,0,0,43.6514499,-79.418437,Toronto and East York Community Council,50694,0,0,0,Residential
 601,Approved,One Property,0,1,0,0,43.70895885882353,-79.40244923529411,North York Community Council,89330,1,0,0,Residential
 602,Approved,One Property,1,1,0,0,43.71079756666666,-79.26130106666666,Scarborough Community Council,36232,0,0,0,Residential
@@ -569,8 +597,11 @@
 612,Approved,One Property,0,1,0,0,43.64457121428571,-79.44442618571429,Toronto and East York Community Council,50580,0,0,0,Residential
 613,Approved,One Property,0,1,0,0,43.6604831,-79.48604386363635,Toronto and East York Community Council,71888,0,0,0,Residential
 614,Approved,One Property,0,1,0,0,43.6363406,-79.43741669778807,Toronto and East York Community Council,35207,0,0,0,Residential
+615,Denied,More Than One Property,0,1,0,1,43.7783549,-79.1722006,Scarborough Community Council,33323,0,0,0,Institutional
 616,Approved,One Property,0,1,0,0,43.653461,-79.413164,Toronto and East York Community Council,50694,0,0,0,Residential
 617,Denied,One Property,0,1,0,0,43.73597005567002,-79.38262630847746,North York Community Council,308010,0,0,0,Residential
+618,Approved,One Property,1,0,0,0,43.76669258333333,-79.15509765833333,Scarborough Community Council,33323,0,0,0,Utility and Transportation
+619,Approved,One Property,0,1,0,0,43.71512080607256,-79.41021435865704,North York Community Council,169203,0,0,0,Open Space
 620,Approved,One Property,0,1,0,0,43.66546,-79.4140753125,Toronto and East York Community Council,112766,0,0,0,Residential
 621,Approved,One Property,0,1,0,0,43.65486506429369,-79.57691533633444,Etobicoke York Community Council,47002,0,0,0,Residential
 622,Approved,One Property,0,1,0,0,43.68137371818182,-79.46402967272728,Toronto and East York Community Council,33316,0,0,0,Residential
@@ -585,6 +616,7 @@
 631,Approved,One Property,1,0,0,0,43.701282975,-79.2892880125,Scarborough Community Council,36232,0,0,0,Residential
 632,Approved,One Property,1,1,0,0,43.70330433184684,-79.26205385208145,Scarborough Community Council,54360,0,0,0,Residential
 633,Approved,One Property,0,1,0,0,43.60285941428572,-79.5038104857143,Etobicoke York Community Council,44101,0,0,0,Residential
+634,Approved,One Property,0,1,0,0,43.6000887,-79.5212376,Etobicoke York Community Council,44101,0,0,0,Open Space
 635,Approved,One Property,0,1,0,0,43.681106972,-79.39339590799999,Toronto and East York Community Council,114174,1,0,0,Residential
 637,Approved,One Property,0,1,0,0,43.6898443,-79.3114038,Toronto and East York Community Council,47710,0,0,0,Residential
 638,Approved,One Property,0,1,0,0,43.74636212116246,-79.41996209542188,North York Community Council,72371,0,0,0,Residential
@@ -610,6 +642,7 @@
 659,Approved,One Property,0,1,0,0,43.69151172352941,-79.30201204117647,Toronto and East York Community Council,30430,0,0,0,Residential
 660,Approved,One Property,0,1,0,0,43.73968955469334,-79.38954876701754,North York Community Council,308010,0,0,0,Residential
 661,Approved,One Property,0,1,0,0,43.73818940752076,-79.35979137486497,North York Community Council,67757,0,0,0,Residential
+662,Approved,One Property,0,1,0,0,43.760524,-79.19424066666667,Scarborough Community Council,33323,0,0,0,Institutional
 663,Approved,One Property,0,1,0,0,43.7216591,-79.4387479,North York Community Council,48134,1,0,0,Residential
 664,Approved,One Property,1,1,0,0,43.7886209,-79.1364751,Scarborough Community Council,39556,0,0,0,Residential
 665,Approved,One Property,0,1,0,0,43.67564158076923,-79.30438726923077,Toronto and East York Community Council,92580,0,0,0,Residential
@@ -744,6 +777,7 @@
 794,Denied,One Property,0,1,0,0,43.71790141,-79.42029066,North York Community Council,123077,0,0,0,Residential
 795,Approved,One Property,1,0,0,0,43.7561058,-79.1870028,Scarborough Community Council,53203,0,0,0,Residential
 796,Approved,More Than One Property,1,0,0,0,43.703511,-79.397531,Toronto and East York Community Council,57039,1,1,0,Commercial Residential
+797,Approved,One Property,0,0,0,1,43.7857924,-79.22780957535817,Scarborough Community Council,30878,0,0,0,Institutional
 798,Denied,One Property,0,1,0,0,43.67524822708334,-79.30325933333333,Toronto and East York Community Council,92580,0,0,0,Residential
 799,Denied,One Property,0,1,0,0,43.69245223761599,-79.42446981929562,Toronto and East York Community Council,65274,0,0,0,Residential
 800,Approved,One Property,0,1,0,0,43.66045188723404,-79.42360089787235,Toronto and East York Community Council,58071,0,0,0,Residential
@@ -803,6 +837,8 @@
 853,Approved,One Property,0,1,0,0,43.72470647944042,-79.39770795805022,North York Community Council,169203,0,0,0,Residential
 854,Approved,One Property,0,1,0,0,43.70913176059541,-79.48169278848577,Etobicoke York Community Council,37108,0,0,0,Residential
 855,Approved,More Than One Property,0,0,0,1,43.75457001,-79.44246752,North York Community Council,51181,1,0,0,Residential
+856,Approved,One Property,0,0,0,1,43.8159633,-79.31862945762917,Scarborough Community Council,31786,0,0,0,Institutional
+857,Denied,More Than One Property,0,0,1,0,43.645931,-79.399074,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 858,Denied,One Property,1,0,0,0,43.59215825,-79.53645589999999,Etobicoke York Community Council,47384,0,0,0,Residential
 859,Denied,More Than One Property,0,0,1,0,43.78392405,-79.29292927687683,Scarborough Community Council,34200,1,0,0,Commercial Residential
 860,Denied,One Property,0,0,1,0,43.6665405,-79.37917058530283,Toronto and East York Community Council,53583,0,0,0,Residential
@@ -821,6 +857,7 @@
 873,Approved,One Property,1,0,0,0,43.5920395,-79.52985609473684,Etobicoke York Community Council,47384,0,0,0,Residential
 874,Approved,One Property,0,1,0,0,43.7609695,-79.32242799127476,North York Community Council,42516,0,0,0,Residential Apartment
 875,Approved,One Property,1,0,0,0,43.7589427,-79.4155603,North York Community Council,72371,0,0,0,Residential
+876,Denied,More Than One Property,0,0,1,0,43.647852,-79.397249,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 877,Denied,More Than One Property,0,0,1,0,43.6663815,-79.3813475,Toronto and East York Community Council,53583,0,1,1,Commercial Residential
 877,Denied,More Than One Property,0,0,1,0,43.6663815,-79.3813475,Toronto and East York Community Council,53583,0,1,1,Commercial Residential
 878,Denied,More Than One Property,0,0,1,1,43.66499435105731,-79.45986739361388,Toronto and East York Community Council,49709,0,0,1,Commercial Residential
@@ -830,6 +867,7 @@
 882,Denied,One Property,0,1,0,0,43.66051078749999,-79.478568675,Toronto and East York Community Council,49709,0,0,0,Residential
 883,Approved,More Than One Property,0,0,1,1,43.65393521957667,-79.42402661910833,Toronto and East York Community Council,50694,0,1,0,Commercial Residential
 884,Approved,More Than One Property,0,0,1,1,43.65370313802995,-79.4248910780304,Toronto and East York Community Council,50694,0,1,0,Commercial Residential
+885,Approved,More Than One Property,0,0,0,1,43.64565,-79.3901667,Toronto and East York Community Council,70600,1,1,0,Commercial Residential Employment
 886,Denied,More Than One Property,0,0,1,0,43.7675422,-79.3849679,North York Community Council,52035,1,0,0,Commercial Residential
 887,Denied,One Property,1,0,1,0,43.7110667,-79.45516367166226,North York Community Council,38527,0,1,0,Residential Apartment
 888,Denied,One Property,0,1,0,0,43.70551502727273,-79.46028118181819,North York Community Council,38527,0,0,0,Residential
@@ -865,6 +903,7 @@
 918,Denied,More Than One Property,0,0,1,0,43.7456744,-79.38328599073431,North York Community Council,308010,0,0,0,Residential
 919,Denied,One Property,1,0,0,0,43.6488342,-79.3613671,Toronto and East York Community Council,70600,1,0,0,Employment Industrial
 920,Approved,One Property,0,0,0,1,43.6434702,-79.4290789,Toronto and East York Community Council,45737,0,0,0,Employment Industrial
+921,Denied,One Property,1,0,0,0,43.64875242857143,-79.39050285714286,Toronto and East York Community Council,70600,1,1,0,Commercial Residential Employment
 922,Denied,One Property,1,0,0,0,43.786405,-79.439421,North York Community Council,34904,0,0,0,Residential
 923,Approved,One Property,0,0,0,1,43.7152085,-79.60413398066137,Etobicoke York Community Council,31771,0,0,1,Employment Industrial
 923,Approved,One Property,0,0,0,1,43.7152085,-79.60413398066137,Etobicoke York Community Council,31771,0,0,1,Employment Industrial
@@ -872,6 +911,7 @@
 925,Approved,More Than One Property,0,0,1,0,43.69775896136742,-79.50976549709048,Etobicoke York Community Council,32997,0,0,1,Commercial Residential
 926,Denied,More Than One Property,0,0,1,0,43.6493612,-79.3615459,Toronto and East York Community Council,70600,1,0,0,Employment Industrial
 927,Approved,One Property,0,0,1,0,43.7332957,-79.4528153,North York Community Council,51181,1,1,0,Employment Industrial
+928,Denied,More Than One Property,0,0,1,0,43.646729,-79.40089014285715,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 929,Approved,One Property,0,1,0,0,43.726647,-79.3899877,North York Community Council,169203,0,0,0,Residential
 930,Denied,One Property,0,0,1,0,43.6187535,-79.4942458,Etobicoke York Community Council,54438,0,0,1,Employment Industrial
 931,Denied,More Than One Property,0,0,1,0,43.6245796,-79.5114086,Etobicoke York Community Council,64140,0,1,0,Commercial Residential
@@ -889,6 +929,7 @@
 943,Denied,One Property,1,0,0,0,43.68336395714286,-79.3021926,Toronto and East York Community Council,54324,0,0,0,Residential
 944,Approved,One Property,1,0,0,0,43.75861905483871,-79.4128816516129,North York Community Council,72371,0,0,0,Residential
 945,Approved,More Than One Property,0,0,0,1,43.6465143,-79.383497,Toronto and East York Community Council,56526,0,1,0,Commercial Residential
+946,Approved,More Than One Property,0,0,0,1,43.6421637,-79.3965967,Toronto and East York Community Council,70600,1,0,1,Commercial Residential Employment
 947,Approved,One Property,1,0,0,0,43.7360082,-79.420293,North York Community Council,123077,0,0,0,Commercial Residential
 948,Approved,More Than One Property,0,0,1,0,43.6558102,-79.4466674,Toronto and East York Community Council,40588,0,0,0,Residential
 949,Denied,One Property,0,0,1,0,43.7634741,-79.4014236,North York Community Council,45326,0,0,0,Commercial Residential
@@ -921,13 +962,16 @@
 976,Denied,More Than One Property,0,0,1,0,43.6434701,-79.4082484,Toronto and East York Community Council,70623,1,0,0,Employment Industrial
 977,Approved,More Than One Property,0,0,1,0,43.69337075,-79.42225125,Toronto and East York Community Council,204521,0,0,0,Residential
 978,Denied,More Than One Property,0,0,1,0,43.71763612307692,-79.43632313846153,North York Community Council,48134,0,0,0,Residential
+979,Approved,One Property,0,0,0,1,43.72285855,-79.37566139839973,North York Community Council,308010,0,0,1,Institutional
 980,Approved,One Property,0,1,0,0,43.72882918709678,-79.40445179354838,North York Community Council,111730,0,0,0,Residential
+981,Denied,More Than One Property,0,0,1,0,43.64478132631579,-79.39935671578948,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 982,Approved,One Property,0,0,0,1,43.7129816,-79.3597976,North York Community Council,28875,0,0,0,Employment Industrial
 983,Approved,More Than One Property,1,0,0,0,43.69036465,-79.4469888,Toronto and East York Community Council,39803,0,0,0,Residential
 984,Approved,One Property,1,0,0,0,43.60690643529411,-79.5415359,Etobicoke York Community Council,47709,0,0,0,Residential
 985,Approved,One Property,0,1,0,0,43.7127405125,-79.4302640625,North York Community Council,48134,0,0,0,Residential
 986,Approved,One Property,1,0,0,0,43.7266469,-79.2241619,Scarborough Community Council,44718,0,0,0,Residential
 987,Approved,One Property,0,0,1,0,43.6393623,-79.564663,Etobicoke York Community Council,38255,0,0,0,Residential Apartment
+988,Approved,One Property,1,0,0,0,43.7302646,-79.43409194469027,North York Community Council,48134,1,0,0,Institutional
 989,Denied,One Property,0,1,0,0,43.72301805454546,-79.44920726363637,North York Community Council,38527,1,0,0,Residential
 991,Denied,More Than One Property,0,0,1,0,43.6843181,-79.35663746,Toronto and East York Community Council,44557,0,0,0,Commercial Residential
 992,Denied,One Property,0,1,0,0,43.7372202,-79.5653887,Etobicoke York Community Council,32815,0,1,0,Commercial Residential
@@ -960,6 +1004,7 @@
 1020,Approved,One Property,0,1,0,0,43.69438834,-79.44101044,Toronto and East York Community Council,39803,0,0,0,Residential
 1021,Approved,More Than One Property,0,0,1,0,43.6867356,-79.3933388,Toronto and East York Community Council,207903,1,1,0,Commercial Residential
 1022,Approved,One Property,0,1,0,0,43.7419295,-79.4348651,North York Community Council,72371,0,0,0,Residential
+1023,Denied,One Property,0,0,1,1,43.65220859999999,-79.36533762397987,Toronto and East York Community Council,58915,1,1,0,Commercial Residential Employment
 1024,Approved,One Property,0,1,0,0,43.7151522,-79.37153454285713,North York Community Council,125564,0,0,0,Residential
 1025,Approved,More Than One Property,0,1,0,0,43.751944,-79.46529567360363,North York Community Council,29958,0,1,1,Employment Industrial
 1026,Approved,One Property,1,1,0,0,43.68539,-79.512581,Etobicoke York Community Council,101551,0,0,0,Residential Apartment
@@ -1000,6 +1045,7 @@
 1061,Approved,One Property,0,0,0,1,43.69752898571429,-79.51141178571429,Etobicoke York Community Council,32997,0,0,1,Commercial Residential
 1062,Denied,One Property,0,1,0,0,43.73724908723047,-79.41040915175286,North York Community Council,123077,0,0,0,Residential
 1063,Approved,More Than One Property,0,0,0,1,43.7705731,-79.2615792,Scarborough Community Council,33256,1,0,0,Commercial Residential
+1064,Approved,One Property,0,0,0,1,43.746878,-79.19368001783906,Scarborough Community Council,53203,0,0,1,Open Space
 1065,Denied,One Property,0,1,0,0,43.6518214,-79.40768931176471,Toronto and East York Community Council,50694,0,1,0,Commercial Residential
 1066,Approved,One Property,0,1,0,0,43.73344810588235,-79.41914430588236,North York Community Council,123077,0,0,0,Commercial Residential
 1067,Approved,More Than One Property,1,0,0,0,43.6751515,-79.5651265,Etobicoke York Community Council,44177,0,0,0,Residential Apartment
@@ -1018,10 +1064,13 @@
 1080,Approved,One Property,0,0,0,1,43.7467645,-79.28376815713102,Scarborough Community Council,31692,0,0,0,Residential Apartment
 1081,Approved,One Property,0,1,0,0,43.7239674,-79.4454993,North York Community Council,48134,1,0,0,Residential
 1082,Denied,One Property,0,1,0,0,43.66470148947369,-79.47016707368421,Toronto and East York Community Council,49709,0,0,0,Residential
+1083,Approved,One Property,1,0,0,0,43.652763,-79.3715367,Toronto and East York Community Council,58915,1,1,0,Commercial Residential Employment
 1084,Denied,One Property,0,1,0,0,43.69232034887497,-79.42763095787248,Toronto and East York Community Council,65274,0,0,0,Residential
 1085,Approved,More Than One Property,1,0,0,0,43.6903109,-79.3923016,Toronto and East York Community Council,207903,1,0,0,Residential
 1086,Approved,One Property,0,1,0,0,43.6761633,-79.4425298,Toronto and East York Community Council,41717,0,0,0,Residential
 1087,Approved,One Property,0,1,0,0,43.78536453455629,-79.27097712980866,Scarborough Community Council,31825,0,0,0,Residential
+1089,Approved,One Property,1,0,0,1,43.645933,-79.392411,Toronto and East York Community Council,70600,1,1,0,Commercial Residential Employment
+1090,Approved,One Property,1,0,0,0,43.6458885,-79.392614,Toronto and East York Community Council,70600,1,1,0,Commercial Residential Employment
 1091,Approved,One Property,0,1,0,0,43.70665241999473,-79.30315345241632,Toronto and East York Community Council,43907,0,0,0,Residential
 1092,Approved,One Property,1,0,0,0,43.75832116129032,-79.41344960645161,North York Community Council,72371,0,0,0,Residential
 1093,Denied,One Property,0,1,0,0,43.69923261216501,-79.41527348664563,Toronto and East York Community Council,204521,0,0,0,Residential
@@ -1042,6 +1091,7 @@
 1108,Denied,One Property,1,1,0,0,43.77045436666667,-79.43364753333334,North York Community Council,44576,0,0,0,Residential
 1109,Approved,One Property,1,1,1,0,43.7792995,-79.39107,North York Community Council,45326,0,0,0,Residential
 1110,Denied,One Property,0,0,1,0,43.78874205,-79.39130855000002,North York Community Council,47246,0,0,0,Residential Apartment
+1111,Denied,One Property,0,1,0,0,43.8272927,-79.2661362,Scarborough Community Council,28085,0,0,0,Institutional
 1112,Approved,One Property,1,0,0,0,43.66536882,-79.45208018000001,Toronto and East York Community Council,39740,0,0,0,Commercial Residential
 1113,Denied,One Property,0,1,0,0,43.60593286666666,-79.53326383333334,Etobicoke York Community Council,47709,0,0,0,Residential
 1115,Approved,One Property,0,1,0,0,43.72325265000001,-79.2626579125,Scarborough Community Council,30974,0,0,0,Residential
@@ -1065,6 +1115,7 @@
 1134,Denied,One Property,0,1,0,0,43.64571538666667,-79.47601245333334,Toronto and East York Community Council,71204,1,0,0,Residential
 1135,Denied,One Property,0,0,1,0,43.67221081568636,-79.46284906651967,Toronto and East York Community Council,33528,0,0,0,Residential
 1136,Denied,One Property,0,0,1,0,43.67957295,-79.39104793356802,Toronto and East York Community Council,112766,0,1,1,Commercial Residential
+1137,Approved,One Property,0,1,0,0,43.7459724,-79.2909749,Scarborough Community Council,35047,0,1,0,Open Space
 1138,Approved,One Property,1,0,0,0,43.71220918235294,-79.2488083117647,Scarborough Community Council,54360,0,0,0,Residential
 1139,Denied,One Property,0,1,0,0,43.65016176174557,-79.47353173243384,Toronto and East York Community Council,71204,1,0,0,Residential
 1140,Approved,One Property,1,0,0,0,43.7636835,-79.4521167,North York Community Council,45936,0,0,0,Residential
@@ -1127,6 +1178,7 @@
 1197,Denied,One Property,0,1,0,0,43.69332205000001,-79.39641355250797,Toronto and East York Community Council,114174,1,0,0,Residential
 1198,Approved,One Property,0,1,0,0,43.67820332941177,-79.38774952352941,Toronto and East York Community Council,207903,0,0,0,Residential
 1199,Approved,One Property,1,1,0,0,43.6567607,-79.4579895,Toronto and East York Community Council,57465,0,0,0,Residential
+1200,Approved,One Property,1,0,0,0,43.652801,-79.371456,Toronto and East York Community Council,58915,1,1,0,Commercial Residential Employment
 1201,Approved,More Than One Property,1,0,0,0,43.66005023513513,-79.43105873243243,Toronto and East York Community Council,40588,0,0,0,Residential
 1202,Approved,One Property,1,0,0,0,43.7058792,-79.2926209,Scarborough Community Council,36232,0,0,0,Residential
 1203,Approved,One Property,1,0,0,0,43.71263226,-79.39116698,North York Community Council,85340,1,0,0,Residential
@@ -1134,6 +1186,7 @@
 1205,Approved,More Than One Property,1,0,0,0,43.6738169,-79.4625568,Toronto and East York Community Council,33528,0,1,0,Commercial Residential
 1206,Approved,More Than One Property,1,0,0,0,43.7345345,-79.447206,North York Community Council,51181,0,0,0,Employment Industrial
 1207,Denied,More Than One Property,0,0,1,0,43.6878068,-79.35478534285714,Toronto and East York Community Council,44557,0,0,0,Residential Apartment
+1208,Approved,One Property,0,0,0,1,43.73740672142857,-79.56713515,Etobicoke York Community Council,32815,0,1,0,Institutional
 1209,Denied,One Property,1,1,0,0,43.7572017625,-79.41416756875,North York Community Council,72371,0,0,0,Residential
 1210,Approved,More Than One Property,1,0,0,0,43.6724303173913,-79.30748862173913,Toronto and East York Community Council,92580,0,0,0,Residential
 1211,Denied,One Property,1,1,0,0,43.7700326,-79.4292043,North York Community Council,44576,0,0,0,Residential
@@ -1189,6 +1242,7 @@
 1260,Approved,One Property,1,0,0,0,43.6770749,-79.2857677,Toronto and East York Community Council,92580,0,0,0,Residential
 1261,Denied,One Property,0,1,0,0,43.5896960125,-79.5417319625,Etobicoke York Community Council,47384,0,0,0,Residential
 1262,Denied,One Property,0,1,0,0,43.589670625,-79.541838825,Etobicoke York Community Council,47384,0,0,0,Residential
+1263,Denied,More Than One Property,0,0,1,0,43.65160755,-79.3677700791134,Toronto and East York Community Council,58915,1,1,0,Commercial Residential Employment
 1264,Approved,More Than One Property,1,0,0,0,43.6484855,-79.52580497996446,Etobicoke York Community Council,52787,1,0,0,Commercial Residential
 1265,Denied,One Property,1,1,0,0,43.7571557375,-79.41437468125,North York Community Council,72371,0,0,0,Residential
 1266,Approved,One Property,1,1,0,0,43.70570904562233,-79.29711064730955,Toronto and East York Community Council,43907,0,0,0,Residential
@@ -1232,8 +1286,11 @@
 1304,Approved,One Property,1,0,1,0,43.7062049,-79.389525,Toronto and East York Community Council,57039,1,1,0,Commercial Residential
 1305,Denied,One Property,0,1,0,0,43.66456225,-79.48306135,Toronto and East York Community Council,71888,0,0,0,Residential
 1306,Approved,One Property,1,0,0,0,43.70340154126433,-79.29266861079233,Scarborough Community Council,36232,0,0,0,Residential
+1307,Approved,One Property,0,1,0,0,43.73944299999999,-79.2153301845837,Scarborough Community Council,32913,0,0,0,Institutional
+1308,Denied,One Property,0,1,0,0,43.6845668,-79.3836871,Toronto and East York Community Council,207903,1,0,0,Open Space
 1309,Denied,One Property,0,1,0,0,43.72843997479978,-79.53568294087505,Etobicoke York Community Council,39003,0,1,0,Residential
 1310,Approved,More Than One Property,1,0,0,0,43.7004601,-79.270587475,Scarborough Community Council,26793,0,0,0,Employment Industrial
+1311,Approved,One Property,0,1,0,0,43.7912391,-79.2486174,Scarborough Community Council,31825,0,1,0,Commercial
 1312,Approved,One Property,1,1,0,0,43.6980812,-79.27050416666667,Scarborough Community Council,26793,0,0,0,Residential
 1313,Denied,One Property,0,1,0,0,43.78384055,-79.3379684,North York Community Council,36346,0,0,0,Residential
 1314,Denied,One Property,0,1,0,0,43.64962832012891,-79.45674633370281,Toronto and East York Community Council,71204,0,0,0,Residential
@@ -1266,6 +1323,7 @@
 1341,Denied,One Property,0,1,0,0,43.7268057,-79.423462,North York Community Council,123077,0,0,0,Residential
 1342,Approved,One Property,0,1,0,0,43.67948467692307,-79.29050986153847,Toronto and East York Community Council,92580,0,0,0,Residential
 1343,Denied,One Property,0,1,0,0,43.6802325,-79.4064387,Toronto and East York Community Council,165047,0,0,0,Residential
+1344,Approved,One Property,0,1,0,0,43.70344274948815,-79.29981900127223,Toronto and East York Community Council,43907,0,0,0,Open Space
 1345,Approved,One Property,1,1,0,0,43.70736093793104,-79.45079878275862,North York Community Council,38527,0,0,0,Residential
 1346,Approved,One Property,1,1,0,0,43.70731472413793,-79.45100973448275,North York Community Council,38527,0,0,0,Residential
 1347,Denied,One Property,0,1,0,0,43.64709558650046,-79.48746338707942,Toronto and East York Community Council,71204,1,0,0,Residential
@@ -1291,6 +1349,7 @@
 1367,Denied,One Property,0,1,0,0,43.7046059987041,-79.36160506416546,North York Community Council,125564,0,0,0,Commercial Residential
 1368,Approved,One Property,0,1,0,0,43.7562431,-79.2312584,Scarborough Community Council,30878,0,0,0,Residential
 1369,Approved,One Property,0,1,0,0,43.7231501,-79.4413865,North York Community Council,48134,1,0,0,Residential
+1370,Approved,One Property,1,0,1,0,43.6202522,-79.5492757,Etobicoke York Community Council,52787,0,0,0,Utility and Transportation
 1371,Denied,One Property,0,1,0,0,43.6617191,-79.3292863,Toronto and East York Community Council,46206,0,0,0,Employment Industrial
 1372,Denied,More Than One Property,0,0,1,0,43.7306765,-79.28008413206214,Scarborough Community Council,35047,0,0,1,Employment Industrial
 1373,Approved,One Property,1,1,0,0,43.7952595,-79.401452,North York Community Council,45212,0,0,0,Residential
@@ -1392,6 +1451,7 @@
 1469,Denied,One Property,1,1,0,0,43.71572325,-79.264310975,Scarborough Community Council,36232,0,0,0,Residential
 1470,Approved,One Property,0,1,0,0,43.67717068194899,-79.53152967148884,Etobicoke York Community Council,101551,0,0,0,Residential
 1471,Approved,One Property,0,1,0,0,43.77343937647059,-79.42463070588236,North York Community Council,44576,0,0,0,Residential
+1472,Approved,One Property,0,1,0,0,43.78057510689655,-79.29949941034482,Scarborough Community Council,34200,0,0,0,Commercial
 1473,Denied,More Than One Property,0,1,0,0,43.6264619,-79.52633126186522,Etobicoke York Community Council,52787,0,0,0,Employment Industrial
 1474,Denied,One Property,1,1,0,0,43.71139210044586,-79.49574880438635,Etobicoke York Community Council,31800,0,0,0,Residential
 1475,Approved,More Than One Property,1,0,0,0,43.69024828076923,-79.44821006923077,Toronto and East York Community Council,35112,0,0,0,Residential
@@ -1434,6 +1494,7 @@
 1511,Approved,One Property,0,1,0,0,43.6533248,-79.47106606298811,Toronto and East York Community Council,57465,0,0,0,Residential
 1512,Approved,More Than One Property,1,0,0,0,43.6912605,-79.3960725,Toronto and East York Community Council,114174,1,0,0,Residential
 1513,Approved,One Property,0,1,0,0,43.64802432978131,-79.4536222647331,Toronto and East York Community Council,71204,0,0,0,Residential
+1514,Denied,More Than One Property,0,0,1,0,43.647587,-79.397676,Toronto and East York Community Council,70600,1,0,0,Commercial Residential Employment
 1516,Denied,More Than One Property,0,0,1,0,43.68163101666667,-79.35776155,Toronto and East York Community Council,70831,0,0,0,Commercial Residential
 1517,Approved,One Property,1,1,0,0,43.6965804,-79.2743777,Scarborough Community Council,26793,0,0,0,Residential
 1518,Approved,One Property,0,1,0,0,43.716717175,-79.390041475,North York Community Council,85340,1,0,0,Residential

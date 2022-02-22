@@ -28,7 +28,7 @@ Data for this project was collected from the [City of Toronto Open Data Portal](
 
 - I arbitrarily decided to only look at applications that have been applied for on or after May 3rd 2017. I chose this date because it was the day that the Toronto Local Appeal Body (TLAB) came into effect.
   
-- My definition of denied applications include those that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied, and therefore should be labeled as such. I know it is common for applications to be appealed because the city failed to make a decision on the application in the alloted review time set out by the Planning Act. However, based on the way the data is presented I cannot determine whether this is the case at scale.
+- My definition of denied applications include those that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied, and therefore should be labeled as such. I know it is common for applications to be appealed because a decision was not made in the alloted review time set out by the Planning Act. However, based on the way the data is formatted I could not determine whether this is the case and decided to proceed on the assumption that all applications were formally denied.
 
 ## Data Wrangling
 
@@ -46,9 +46,9 @@ Here is an overview of the major data wrangling steps I performed:
 
 ## Exploratory Data Analysis - Key Findings
 
-Two types of statistical tests were conducted to determine which features should be included in predicting an applications status. Chi-square tests were performed on each of the categorical features, while a logistic regression model was fit on all of the numerical features.
+Two types of statistical tests were performed to determine which features should be included in predicting an applications status. Chi-square tests were performed on each of the categorical features, while a logistic regression model was fit on all of the numerical features using a backward selection method.
 
-These tests showed that the following features were statistically significant, and thus made for good predictors in classifying an applications status:
+These tests showed that the following features were statistically significant, and made for good predictors in classifying an applications status:
 
 - The number of properties (one property vs more than one property).
   
@@ -58,10 +58,12 @@ These tests showed that the following features were statistically significant, a
   
 - Whether the application is located in a secondary plan area.
   
-- Whether the application is located in a site or area that has a specific policy.
-  
 - The average income of the neighbourhood that the application is located in.
 
-I will note that neighbourhoods were found to be statistically significant in predicting an applications status. However there are 132 neighbourhoods in Toronto. Including this as a feature would greatly increase the models complexity and dimensionality. Since neighbourhoods can be consolidated down to councils, I opted for not including it as a feature in the prediction model.
+I will note the following:
 
-## Lessons That I Learned
+- Neighbourhoods were found to be statistically significant in predicting an applications status. However there were 133 neighbourhoods observed in the dataset. Including this as a feature would greatly increase the models complexity and dimensionality. Since neighbourhoods can be consolidated down to councils, I opted to not including it as a feature in the prediction model.
+  
+- The zoning category was not found to be statistically significant in predicting an applications status. However, I suspect this was due to the imbalance of zoning categories.
+  
+  ## Lessons That I Learned
