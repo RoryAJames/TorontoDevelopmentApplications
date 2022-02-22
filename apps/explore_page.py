@@ -58,14 +58,31 @@ def show_explore_page():
         site_plan = 0
         
     with row2_col2:
-        zoning = st.multiselect("Select The Zoning Type(s)", (df.Zoning_Category.unique()))
-        
+        zoning = st.multiselect("Select The Zoning Categories", (df.Zoning_Category.unique()))
+            
     with row2_col3:
         policies = st.multiselect("Select Additional Policies", ('Secondary Plan Areas','Business Improvement Areas',
         'Site Specific Policy Areas'))
         
+    if 'Secondary Plan Areas' in policies:
+        secondary_plan = 1
         
-    average_income = st.slider("Show Applications In Range of Neighbourhood Average Income",value=(25000,350000))
+    else:
+        secondary_plan = 0
+    
+    if 'Business Improvement Areas' in policies:
+        bia = 1
+    else:
+        bia = 0
+
+    if 'Site Specific Policy Areas' in policies:
+        site_specific = 1
+    else:
+        site_specific = 0
+    
+    #Row 3        
+        
+    average_income = st.slider("Select The Average Neighbourhood Income Range",value=(0,350000))
     average_income_lower = average_income[0]
     average_income_upper = average_income[1]
     
@@ -79,6 +96,10 @@ def show_explore_page():
     & Minor_Variance == @minor_variance \
     & Official_Plan_Rezoning == @official_plan \
     & Site_Plan_Application == @site_plan \
+    & Zoning_Category == @zoning \
+    & Secondary_Plan == @secondary_plan \
+    & Business_Improvement_Area == @bia \
+    & Site_and_Area_Specific_Policy == @site_specific \
     & Average_Income >= @average_income_lower \
     & Average_Income <= @average_income_upper\
     ''')
@@ -86,6 +107,6 @@ def show_explore_page():
     if len(df_selection) == 1:
         st.subheader("**Only one application meets these parameters.**")
     else:
-        st.subheader(f"**There are {len(df_selection)} applications meet these parameters.**")
+        st.subheader(f"**There are {len(df_selection)} applications that meet these parameters.**")
     
     st.map(df_selection)

@@ -65,5 +65,5 @@ I will note the following:
 - Neighbourhoods were found to be statistically significant in predicting an applications status. However there were 133 neighbourhoods observed in the dataset. Including this as a feature would greatly increase the models complexity and dimensionality. Since neighbourhoods can be consolidated down to councils, I opted to not including it as a feature in the prediction model.
   
 - The zoning category was not found to be statistically significant in predicting an applications status. However, I suspect this was due to the imbalance of zoning categories.
-  
-  ## Lessons That I Learned
+
+## Lessons That I Learned
