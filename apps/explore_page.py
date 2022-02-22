@@ -16,7 +16,7 @@ def show_explore_page():
     st.title('Explore Development Applications In The City of Toronto')
 
 ##Row 1
-    row1_col1, row1_col2, row1_col3 = st.columns([1, 1.5, 2])
+    row1_col1, row1_col2, row1_col3 = st.columns([1, 1, 1])
 
     with row1_col1:
         status = st.selectbox("Select The Application Status", df.Status.unique())
@@ -29,7 +29,7 @@ def show_explore_page():
 
  ## Row 2   
 
-    row2_col1, row2_col2 = st.columns([1.8, 1.8])
+    row2_col1, row2_col2, row2_col3 = st.columns([1, 1, 1])
 
     with row2_col1:
         application_type = st.multiselect("Select The Application Type(s)", ('Consent','Minor Variance',
@@ -58,9 +58,16 @@ def show_explore_page():
         site_plan = 0
         
     with row2_col2:
-        average_income = st.slider("Show Applications In Range of Neighbourhood Average Income",value=(25000,350000))
-        average_income_lower = average_income[0]
-        average_income_upper = average_income[1]
+        zoning = st.multiselect("Select The Zoning Type(s)", (df.Zoning_Category.unique()))
+        
+    with row2_col3:
+        policies = st.multiselect("Select Additional Policies", ('Secondary Plan Areas','Business Improvement Areas',
+        'Site Specific Policy Areas'))
+        
+        
+    average_income = st.slider("Show Applications In Range of Neighbourhood Average Income",value=(25000,350000))
+    average_income_lower = average_income[0]
+    average_income_upper = average_income[1]
     
 
 #Query the data based on the users selection parameters
