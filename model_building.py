@@ -7,7 +7,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
-df = pd.read_csv('data\predict_page.csv', index_col= [0])
+df = pd.read_csv('data\predict_page.csv', index_col= [0]) #Removes unwanted column when reading file
 
 #Establish X and y
 
@@ -24,6 +24,8 @@ X_train['Average_Income'] = income_scaler.transform(X_train['Average_Income'].va
 
 #Since the dataset is imbalanced use stratified KFold to make equal size sets
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+#Create instances of models you want to train
 
 pipelines = {
     'Logistic': make_pipeline(LogisticRegression(random_state=42, max_iter=1000)),
