@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, train_test_split
@@ -9,6 +8,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
 df = pd.read_csv('data\predict_page.csv')
+
+#Establish X and y
 
 X = df.drop("Status", axis=1)
 y = df["Status"]
@@ -29,25 +30,27 @@ pipelines = {
     'RandomForest': make_pipeline(RandomForestClassifier(random_state=42))
     }
 
+#Establish hyperparameter dictionary for each model
+
 hyperparameters = {
     
 'Logistic' : {
     'logisticregression__C': [0.01, 0.1, 1, 10], 
     'logisticregression__penalty' : ['none','l1', 'l2'],
-    'logisticregression__class_weight' : [None, {0:1,1:2},{0:1,1:5}]
+    'logisticregression__solver' : ['lbfgs','liblinear']
     },
 
 'RandomForest' : {
      'randomforestclassifier__n_estimators' : [50, 100, 150, 200],
-     'randomforestclassifier__min_samples_leaf' : [3, 5, 10, 15],
-     'randomforestclassifier__max_depth' : [3, 5, 10, 15],
-     'randomforestclassifier__class_weight' : [None, {0:1,1:2},{0:1,1:5}]
+     'randomforestclassifier__max_depth' : [3, 5, 10, 15], 
+     'randomforestclassifier__min_samples_split' : [2, 5, 10],
+     'randomforestclassifier__min_samples_leaf' : [3, 5, 10, 15]
     }
 }
 
 fitted_models = {} #Establishes a dictionary that will hold the model and its best performing hyperparameters
 
-# Grid search each model and hyperparameter with the five stratified cross validation sets
+# Grid search each model and hyperparameter with the stratified five fold  cross validation sets
 
 for name, pipeline in pipelines.items():
     model = GridSearchCV(pipeline, 
@@ -72,3 +75,8 @@ for name, model in fitted_models.items():
 
 print(model.best_params_)
 
+#Dump the best performing model to pickle file
+
+data = {"model": model, "income_scaler": income_scaler}
+with open('prediction_model.pkl', 'wb') as file:
+    pickle.dump(data, file)
