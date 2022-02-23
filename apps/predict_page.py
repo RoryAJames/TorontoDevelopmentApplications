@@ -19,22 +19,89 @@ def show_predict_page():
     
     st.title('Predict The Likeliehood An Application Receives Initial Approval')
     
+    ## NUMBER OF PROPERTIES
+    
     num_props = st.selectbox("How Many Properties Are On The Application", ('One','More Than One'))
     
-    council = st.selectbox("What Council Is The Application Located In", ('Etobicoke York Community Council','North York Community Council','Scarborough Community Council', 'Toronto and East York Community Council'))
+    if num_props == 'One':
+        num_props = 1
+    else:
+        num_props = 0
+    
+    ## COUNCIL
+    
+    council = st.selectbox("What Council Is The Application Located In", ('Etobicoke York Community Council','North York Community Council','Scarborough Community Council',
+                                                                          'Toronto and East York Community Council'))
+    
+    if council == 'Etobicoke York Community Council':
+        etobicoke = 1
+        
+    else:
+        etobicoke = 0
+    
+    if council == 'North York Community Council':
+        north_york = 1
+        
+    else:
+        north_york = 0
+        
+    if council == 'Scarborough Community Council':
+        scarb = 1
+        
+    else:
+        scarb = 0
+    
+    if council == 'Toronto and East York Community Council':
+        to_ey = 1
+        
+    else:
+        to_ey = 0
+        
+     ## APPLICATION TYPE
     
     application_type = st.multiselect("What Is The Application Type", ('Consent','Minor Variance','Official Plan Rezoning', 'Site Plan Application'))
     
-    secondary_pan = st.selectbox("Is The Application In A Secondary Plan Area", ('Yes','No'))
+    if 'Consent' in application_type:
+        consent = 1
+    else:
+        consent = 0
+    
+    if 'Minor Variance' in application_type:
+        minor_var = 1
+    else:
+        minor_var = 0
+
+    if 'Official Plan Rezoning' in application_type:
+        official_plan = 1
+    else:
+        official_plan = 0
+    
+    if 'Site Plan Application' in application_type:
+        site_plan = 1
+    else:
+        site_plan = 0
+    
+    ## SECONDARY PLAN
+    
+    secondary_plan = st.selectbox("Is The Application Located In A Secondary Plan Area", ('Yes','No'))
+    
+    if secondary_plan == 'Yes':
+        secondary_plan = 1
+    
+    else:
+        secondary_plan = 0
+        
+    ## AVERAGE INCOME
     
     average_income = st.number_input("What Is The Average Income In The Neighbourhood The Application Is Located In", value= 50000)
     
     ok = st.button("Predict Initial Approval Likelihood")
     
     if ok:
-        X = np.array([[num_props, consent, minor_var, official_plan, site_plan, secondary_plan, avgincome, etobicoke, north_york, scarb, to_ey]])
+        X = np.array([[num_props, consent, minor_var, official_plan, site_plan, secondary_plan, average_income, etobicoke, north_york, scarb, to_ey]])
         X[:, 6] = scaler.transform((X[:,6]).reshape(-1,1)) #Scale the user input
         X.astype(float) #Us float since data is being scaled
+    
         
         final_pred = classifier.predict_proba(X)
         st.subheader(f"There is a {final_pred[0][1]:.2%} chance this application receives an initial approval.") #Print prediction result to screen

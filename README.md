@@ -12,6 +12,13 @@ It can be very costly for developers to have a development application denied. I
 
 While the review and outcome of each application is independent, and not supposed to be impacted by precedent, I wanted to know whether the outcome of an application can be predicted based on the parameters of the application itself.
 
+## Model Performance
+
+| Model                 | Accuracy       | Precision   | Recall    | ROC AUC |
+| -------------         |:-------------: | :-----:     | :-----:   | :-----: |
+| Logistic Regression   | 69%            |  69%        | 92%       | 60%     |
+| Random Forest         | 71%            |  72%        | 89%       | 64%     |
+
 ## The Data
 
 Data for this project was collected from the [City of Toronto Open Data Portal](https://open.toronto.ca/). Here is a complete list of all the data sources that I gathered:

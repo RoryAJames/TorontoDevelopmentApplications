@@ -7,7 +7,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
-df = pd.read_csv('data\predict_page.csv')
+df = pd.read_csv('data\predict_page.csv', index_col= [0])
 
 #Establish X and y
 
