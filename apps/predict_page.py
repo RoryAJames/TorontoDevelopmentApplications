@@ -95,7 +95,7 @@ def show_predict_page():
     
     average_income = st.number_input("What Is The Average Income In The Neighbourhood The Application Is Located In", value= 50000)
     
-    ok = st.button("Predict Initial Approval Likelihood")
+    ok = st.button("Predict Approval Likelihood")
     
     if ok:
         X = np.array([[num_props, consent, minor_var, official_plan, site_plan, secondary_plan, average_income, etobicoke, north_york, scarb, to_ey]])
