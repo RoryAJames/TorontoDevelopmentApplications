@@ -93,7 +93,7 @@ def show_predict_page():
         
     ## AVERAGE INCOME
     
-    average_income = st.number_input("What Is The Average Income In The Neighbourhood The Application Is Located In", value= 50000)
+    average_income = st.number_input("What Is The Average Income In The Neighbourhood The Application Is Located In", value= 0)
     
     ok = st.button("Predict Approval Likelihood")
     
