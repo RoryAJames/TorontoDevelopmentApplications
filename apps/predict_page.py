@@ -17,7 +17,7 @@ scaler = data["income_scaler"]
 
 def show_predict_page():
     
-    st.title('Predict The Likeliehood An Application Receives Initial Approval')
+    st.title('Predict The Likeliehood An Application Is Approved')
     
     ## NUMBER OF PROPERTIES
     
@@ -104,4 +104,4 @@ def show_predict_page():
     
         
         final_pred = classifier.predict_proba(X)
-        st.subheader(f"There is a {final_pred[0][1]:.2%} chance this application receives an initial approval.") #Print prediction result to screen
+        st.subheader(f"There is an estimated {final_pred[0][1]:.2%} chance this application receives approval.") #Print prediction result to screen

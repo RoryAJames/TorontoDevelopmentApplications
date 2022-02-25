@@ -7,7 +7,7 @@ from apps.predict_page import show_predict_page
 with st.sidebar:
     selected = option_menu("Main Menu",
                            options = ("About", "Explore", "Predict"),
-                           icons=("house","map","bullseye"),
+                           icons=("house","search","bullseye"),
                            menu_icon="cast")
 
 if selected == "About":

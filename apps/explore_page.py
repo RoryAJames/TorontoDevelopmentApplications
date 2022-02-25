@@ -109,4 +109,4 @@ def show_explore_page():
     else:
         st.subheader(f"**There are {len(df_selection)} applications that meet these parameters.**")
     
-    st.map(df_selection)
+    st.map(df_selection, zoom = 10)
