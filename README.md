@@ -20,7 +20,7 @@ While the review and outcome of each application is independent, and not suppose
 | Random Forest         | 71%            |  72%        | 89%       | 64%     |
 
 
-Precision is the most important metric since it is more costly to avoid false positives. That is, you want to minimize the number of applications where the predicted outcome is approved but they are actually denied.
+Precision is the most important metric. You want to avoid false positives (applications that are predicted approved but are actually denied).
 ## The Data
 
 Data for this project was collected from the [City of Toronto Open Data Portal](https://open.toronto.ca/). Here is a complete list of all the data sources that I gathered:
