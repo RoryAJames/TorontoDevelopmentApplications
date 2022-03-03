@@ -6,10 +6,16 @@ def show_about_page():
     
     st.write("This is a proof of concept application that is designed to help Toronto planners and Real Estate professionals.")
     
-    st.subheader("View The Development Applications Based On Your Interests")
+    st.subheader("An Easier Way To Filter And View Applications")
     
-    st.image("https://i.imgur.com/Z3dk6Tr.gif")
+    st.write("View applications based on a range of parameters such as application type, approval status, number of properties, zoning category, average neighbourhood income, and more!")
+    
+    with st.expander("Click here to see a demo."):
+        st.image("https://i.imgur.com/Z3dk6Tr.gif")
     
     st.subheader("Predict The Likelihood Your Application Receives Approval")
     
-    st.image("https://i.imgur.com/Z3dk6Tr.gif")
+    st.write("Enter the parameters of your application and get the estimated likeliehood that your application will be approved.")
+    
+    with st.expander("Click here to see a demo."):
+        st.image("https://i.imgur.com/Z3dk6Tr.gif")
