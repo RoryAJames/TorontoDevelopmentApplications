@@ -2,7 +2,7 @@ import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, train_test_split
-from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score
+from sklearn.metrics import confusion_matrix,accuracy_score, precision_score, recall_score, roc_auc_score
 from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -67,6 +67,7 @@ for name, model in fitted_models.items():
    pred = model.predict(X_test)
    print(name)
    print(' — — — — ')
+   print(confusion_matrix(y_test, pred))
    print('Accuracy:', accuracy_score(y_test, pred))
    print('Precision:', precision_score(y_test, pred))
    print('Recall:', recall_score(y_test, pred))
