@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 
-
 @st.cache(allow_output_mutation=True)
 def load_model():
     with open('prediction_model.pkl', 'rb') as file:
@@ -17,7 +16,7 @@ scaler = data["income_scaler"]
 
 def show_predict_page():
     
-    st.title('Predict The Likeliehood An Application Is Approved')
+    st.title('Predict The Likeliehood That Your Application Is Approved')
     
     ## NUMBER OF PROPERTIES
     

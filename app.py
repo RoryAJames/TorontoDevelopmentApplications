@@ -23,7 +23,7 @@ st.sidebar.info(
         
         Data for this project was sourced from the [City of Toronto Open Data Portal](https://open.toronto.ca/)
         
-        [Click Here For Project Source Code](https://github.com/RoryAJames/TorontoDevelopmentApplications) 
+        [Click Here For The Project Source Code](https://github.com/RoryAJames/TorontoDevelopmentApplications) 
         
         Feel free to connect with me:        
         [GitHub](https://github.com/RoryAJames) | [LinkedIn](https://www.linkedin.com/in/rory-james-873493111/)
