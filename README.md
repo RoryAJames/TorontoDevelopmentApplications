@@ -10,7 +10,7 @@ This project will explore development applications in the City of Toronto and co
 
 It can be very costly for developers to have a development application denied. If an application is denied the developer is left to either go back to the drawing board, or appeal the decision.
 
-While the review and outcome of each application is independent, and not supposed to be impacted by precedent, I wanted to know whether the outcome of an application can be predicted based on the parameters of the application itself.
+While the review and outcome of each application is supposed to be independent, I suspected that the outcome of each application can be predicted based on the parameters of the application itself.
 
 ## Model Performance
 
@@ -37,25 +37,24 @@ Data for this project was collected from the [City of Toronto Open Data Portal](
 
 - I arbitrarily decided to only look at applications that have been applied for on or after May 3rd 2017. I chose this date because it was the day that the Toronto Local Appeal Body (TLAB) came into effect.
   
-- My definition of denied applications include those that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied, and therefore should be labeled as such. I know it is common for applications to be appealed because a decision was not made in the alloted review time set out by the Planning Act. However, based on the way the data is formatted I could not determine whether this is the case and decided to proceed on the assumption that all applications were formally denied.
+- My definition of denied applications include those that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied, and therefore should be labeled as such. I know it is common for applications to be appealed because a decision was not made in the alloted review time set out in the Planning Act. However, based on the way the city displays the data I cannot determine whether this is the case. I decided it would be best to proceed on the assumption that all applications were formally denied.
 
 ## Data Wrangling
 
 Here is an overview of the major data wrangling steps I performed:
 
-- Applications were placed into a binary category (approved or denied) based on the key words found in City of Toronto development application dataset.
+- Applications were placed into a binary category (either approved or denied) based on the key words found in City of Toronto development applications dataset.
   
-- Part lot, condominium, subdivision, and TLAB applications were removed from the analysis. Part lot applications were removed since these applications take place after construction. Condominium applications were removed since all of the observed applications were approved. Subdivision applications were removed because there were only 14 observations. TLAB applications were removed since these applications are mere duplicates of applications that have already been made and subsequently denied.
+- Part lot, condominium, subdivision, and TLAB applications were removed from the analysis either due to low frequencies or variance. TLAB applications were removed for the sake of reducing duplicates.
   
-- Application numbers were combined in order to generate the number of properties that an application has. The number of properties were later binary encoded into applications that are either one property or more than one property.
+- Since multiple properties can belong to one application, the application reference numbers were grouped together, which generated the total number of properties for each application. The number of properties were later binary encoded to distinguish applications that represent one or more properties.
   
-- Application types were binary encoded based on the applications address. This was done in order to group applications together and eliminate duplicates. It is pretty common for applications to have more than one application type. For example, an official plan and site plan application can be submitted at the same time. The same for minor variance and consent applications
+- It is pretty common for applications to have multiple application types. For example, an official plan and site plan application can be submitted at the same time. The same for minor variance and consent applications. In order to capture this, each applications address and application type were grouped together and binary encoded 
    
 - Latitude and longitude were extracted from each application by geocoding the applications address using Nominatim.
-
 ## Exploratory Data Analysis - Key Findings
 
-Two types of statistical tests were performed to determine which features should be included in predicting an applications status. Chi-square tests were performed on each of the categorical features, while a logistic regression model was fit on all of the numerical features using a backward selection method.
+Two types of statistical tests were performed to determine which features should be included in building the prediction model. Chi-square tests were performed on each of the categorical features, while a logistic regression model was fit on all of the numerical features using a backward selection method.
 
 These tests showed that the following features were statistically significant, and made for good predictors in classifying an applications status:
 
@@ -71,7 +70,7 @@ These tests showed that the following features were statistically significant, a
 
 I will note the following:
 
-- Neighbourhoods were found to be statistically significant in predicting an applications status. However there were 133 neighbourhoods observed in the dataset. Including this as a feature would greatly increase the models complexity and dimensionality. Since neighbourhoods can be consolidated down to councils, I opted to not including it as a feature in the prediction model.
+- Neighbourhoods were found to be statistically significant in predicting an applications status. However there were 133 neighbourhoods observed in the dataset. Including this as a feature would have greatly increased the models complexity and dimensionality. Since neighbourhoods can be consolidated down to councils, I opted to not including it as a feature in the prediction model.
   
 - The zoning category was not found to be statistically significant in predicting an applications status. However, I suspect this was due to the imbalance of zoning categories.
 
