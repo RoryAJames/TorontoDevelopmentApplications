@@ -104,9 +104,11 @@ def show_explore_page():
     & Average_Income <= @average_income_upper\
     ''')
 
-    if len(df_selection) == 1:
-        st.subheader("**Only one application meets these parameters.**")
+    if len(df_selection) == 0:
+        st.subheader("There are no applications that meet these parameters.")
+    elif len(df_selection) == 1:
+        st.subheader("Only one application meets these parameters.")
     else:
-        st.subheader(f"**There are {len(df_selection)} applications that meet these parameters.**")
+        st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
     st.map(df_selection, zoom = 10)

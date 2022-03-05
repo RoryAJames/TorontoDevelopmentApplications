@@ -16,7 +16,7 @@ scaler = data["income_scaler"]
 
 def show_predict_page():
     
-    st.title('Predict The Likeliehood That Your Application Is Approved')
+    st.title('Predict The Likeliehood That Your Receives Approval')
     
     ## NUMBER OF PROPERTIES
     
@@ -96,11 +96,12 @@ def show_predict_page():
     
     ok = st.button("Predict Approval Likelihood")
     
+    #Execute if button is clicked
+    
     if ok:
         X = np.array([[num_props, consent, minor_var, official_plan, site_plan, secondary_plan, average_income, etobicoke, north_york, scarb, to_ey]])
         X[:, 6] = scaler.transform((X[:,6]).reshape(-1,1)) #Scale the user input
-        X.astype(float) #Us float since data is being scaled
+        X.astype(float) #Use float since average income is being scaled
     
-        
         final_pred = classifier.predict_proba(X)
         st.subheader(f"There is an estimated {final_pred[0][1]:.2%} chance this application receives approval.") #Print prediction result to screen
