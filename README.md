@@ -8,6 +8,8 @@ This project will explore development applications in the City of Toronto and co
 
 ## The Inspiration and Business Case
 
+In a previous job, I was responsible for the coordination of several infill development applications in the City of Toronto. From my experience, it seemed like there was always a looming uncertainty and likelihood that an application can be denied by the city officials.
+
 It can be very costly for developers to have a development application denied. If an application is denied the developer is left to either go back to the drawing board, or appeal the decision.
 
 While the review and outcome of each application is supposed to be independent, I suspected that the outcome of each application can be predicted based on the parameters of the application itself.
@@ -37,7 +39,7 @@ Data for this project was collected from the [City of Toronto Open Data Portal](
 
 - I arbitrarily decided to only look at applications that have been applied for on or after May 3rd 2017. I chose this date because it was the day that the Toronto Local Appeal Body (TLAB) came into effect.
   
-- My definition of denied applications include those that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied, and therefore should be labeled as such. I know it is common for applications to be appealed because a decision was not made in the alloted review time set out in the Planning Act. However, based on the way the city displays the data I cannot determine whether this is the case. I decided it would be best to proceed on the assumption that all applications were formally denied.
+- My definition of denied applications include those that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied, and therefore should be labeled as such. I know it is common for applications to be appealed because a decision was not made in the alloted review time set out in the Planning Act. However, based on the way the city stores their data, I cannot determine whether this is the case. I decided it would be best to proceed on the assumption that all applications were formally denied.
 
 ## Data Wrangling
 
@@ -49,14 +51,14 @@ Here is an overview of the major data wrangling steps I performed:
   
 - Since multiple properties can belong to one application, the application reference numbers were grouped together, which generated the total number of properties for each application. The number of properties were later binary encoded to distinguish applications that represent one or more properties.
   
-- It is pretty common for applications to have multiple application types. For example, an official plan and site plan application can be submitted at the same time. The same for minor variance and consent applications. In order to capture this, each applications address and application type were grouped together and binary encoded 
+- It is pretty common for applications to have multiple application types. For example, an official plan and site plan application can be submitted at the same time. The same is true for minor variance and consent applications. In order to capture this, each applications address and application type were grouped together and binary encoded.
    
-- Latitude and longitude were extracted from each application by geocoding the applications address using Nominatim.
+- Latitude and longitude were extracted from each application by geocoding the applications address using Nominatim. Once latitude and longitude were extracted, I was able to perform spatial joins for each application and pair it with the city spatial data.
 ## Exploratory Data Analysis - Key Findings
 
-Two types of statistical tests were performed to determine which features should be included in building the prediction model. Chi-square tests were performed on each of the categorical features, while a logistic regression model was fit on all of the numerical features using a backward selection method.
+Two types of statistical tests were performed to determine the features that should be included in the prediction model. Chi-square tests were performed on each of the categorical features, while a logistic regression model with a backward selection method was fit on all of the numerical features.
 
-These tests showed that the following features were statistically significant, and made for good predictors in classifying an applications status:
+These tests showed that the following features were statistically significant, and thus made for good predictors in classifying an applications status:
 
 - The number of properties (one property vs more than one property).
   
@@ -70,8 +72,10 @@ These tests showed that the following features were statistically significant, a
 
 I will note the following:
 
-- Neighbourhoods were found to be statistically significant in predicting an applications status. However there were 133 neighbourhoods observed in the dataset. Including this as a feature would have greatly increased the models complexity and dimensionality. Since neighbourhoods can be consolidated down to councils, I opted to not including it as a feature in the prediction model.
+- Neighbourhoods were found to be statistically significant in predicting an applications status. However there were 133 neighbourhoods observed in the dataset. Including this as a feature would have greatly increased the models complexity and dimensionality. Since neighbourhoods can be consolidated down to just four councils, I opted to not include it as a feature in the prediction model.
   
-- The zoning category was not found to be statistically significant in predicting an applications status. However, I suspect this was due to the imbalance of zoning categories.
+- The zoning category was not found to be statistically significant in predicting an applications status. However, I suspect this was due to a large imbalance of zoning categories.
 
 ## Lessons That I Learned
+
+While this application is just a proof of concept, I know that in reality far more data points would need to be collected in order to build a fully fledged and reputable prediction application that can be used by planners and real estate professionals.
