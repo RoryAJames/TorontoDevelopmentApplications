@@ -6,23 +6,31 @@ This repository is still a work in progress!
 
 This project will explore development applications in the City of Toronto and compare applications based on their development status.
 
+![Alt Text](images\explorepage.gif)
+
+![Alt Text](images\predictpage.gif)
+
 ## The Inspiration and Business Case
 
-In a previous job, I was responsible for the coordination of several infill development applications in the City of Toronto. From my experience, it seemed like there was always a looming uncertainty and likelihood that an application can be denied by the city officials.
+The inspiration for this project comes from two places:
 
-It can be very costly for developers to have a development application denied. If an application is denied the developer is left to either go back to the drawing board, or appeal the decision.
-
-While the review and outcome of each application is supposed to be independent, I suspected that the outcome of each application can be predicted based on the parameters of the application itself.
+1) I wanted to provide a more user friendly application for planners and real estate professionals to view development application data. The current method to view data on development applications is through the [City of Toronto Application Information Centre](https://www.toronto.ca/city-government/planning-development/application-information-centre/). While this portal does provide a good service, it doesn't offer a lot of functionality in terms of filtering and viewing applications based on geospatial features.    
+   
+2) I know that it can be very costly for developers to have a development application denied. If an application is denied the developer is left to either go back to the drawing board, or appeal the decision.
+   
+   While the review and outcome of each application is supposed to be independent, I suspected that the outcome of each application can be predicted based on the parameters of the application itself.
 
 ## Model Performance
+
+A Logistic Regression and Random Forest model were used to classify the status of applications. Precision was the preferred evaluation metric to compare the performance of the two models. This is because it is far more costly to have false positives in this particular business context. These would be cases where the model predicted an application as approved but it was actually denied. 
+
+The Random Forest model 
 
 | Model                 | Accuracy       | Precision   | Recall    | ROC AUC |
 | -------------         |:-------------: | :-----:     | :-----:   | :-----: |
 | Logistic Regression   | 69%            |  69%        | 92%       | 60%     |
 | Random Forest         | 71%            |  72%        | 89%       | 64%     |
 
-
-Precision is the most important metric. You want to avoid false positives (applications that are predicted approved but are actually denied).
 ## The Data
 
 Data for this project was collected from the [City of Toronto Open Data Portal](https://open.toronto.ca/). Here is a complete list of all the data sources that I gathered:

@@ -58,7 +58,7 @@ for name, pipeline in pipelines.items():
     model = GridSearchCV(pipeline, 
                          hyperparameters[name], 
                          cv=cv,
-                         scoring='roc_auc',
+                         scoring='precision',
                          return_train_score = False)
     model.fit(X_train, y_train)
     fitted_models[name] = model
