@@ -4,9 +4,9 @@ def show_about_page():
     
     st.title('Development Applications In The City of Toronto')
     
-    st.write("""This is a proof of concept application that is designed to help Urban Planners and Real Estate professionals in the City of Toronto by providing
-             them with an easier way to view development application data. In addition, this tool gives users the functionality and ability to 
-             predict the estimated likelihood that an application will receive an approval.""")
+    st.write("""This is a proof of concept application that is designed to help Urban Planners and Real Estate professionals in the City of Toronto, by providing
+             them with an easier way to view development application data. In addition, this tool gives users the ability to predict the estimated likelihood that 
+             an application will receive an approval based on it's parameters.""")
     
     st.subheader("Explore Applications Based On Approval Status")
     
@@ -15,11 +15,11 @@ def show_about_page():
              and more!""")
     
     with st.expander("Click Here To See A Demo."):
-        st.image("https://i.imgur.com/Z3dk6Tr.gif")
+        st.image("images\explorepage.gif")
     
     st.subheader("Predict The Likelihood That Your Application Receives Approval")
     
     st.write("Use Machine Learning to predict the estimated likeliehood that an application will be approved!")
     
     with st.expander("Click Here To See A Demo."):
-        st.image("https://i.imgur.com/Z3dk6Tr.gif")
+        st.image("images\predictpage.gif")
