@@ -6,9 +6,9 @@ This repository is still a work in progress!
 
 This project will explore development applications in the City of Toronto and compare applications based on their development status.
 
-![Alt Text](images\explorepage.gif)
+![](images\explorepage.gif)
 
-![Alt Text](images\predictpage.gif)
+![](images\predictpage.gif)
 
 ## The Inspiration and Business Case
 
