@@ -4,15 +4,10 @@ This repository is still a work in progress!
 
 ## Project Overview
 
-This project will explore development applications in the City of Toronto and compare applications based on their development status.
-
-![](images\explorepage.gif)
-
-![](images\predictpage.gif)
-
+This project will explore development applications in the City of Toronto and compare applications based on their development approval status.
 ## The Inspiration and Business Case
 
-The inspiration for this project comes from two places:
+The inspiration for this project come to me from two places:
 
 1) I wanted to provide a more user friendly application for planners and real estate professionals to view development application data. The current method to view data on development applications is through the [City of Toronto Application Information Centre](https://www.toronto.ca/city-government/planning-development/application-information-centre/). While this portal does provide a good service, it doesn't offer a lot of functionality in terms of filtering and viewing applications based on geospatial features.    
    
@@ -20,20 +15,9 @@ The inspiration for this project comes from two places:
    
    While the review and outcome of each application is supposed to be independent, I suspected that the outcome of each application can be predicted based on the parameters of the application itself.
 
-## Model Performance
-
-A Logistic Regression and Random Forest model were used to classify the status of applications. Precision was the preferred evaluation metric to compare the performance of the two models. This is because it is far more costly to have false positives in this particular business context. These would be cases where the model predicted an application as approved but it was actually denied. 
-
-The Random Forest model 
-
-| Model                 | Accuracy       | Precision   | Recall    | ROC AUC |
-| -------------         |:-------------: | :-----:     | :-----:   | :-----: |
-| Logistic Regression   | 69%            |  69%        | 92%       | 60%     |
-| Random Forest         | 71%            |  72%        | 89%       | 64%     |
-
 ## The Data
 
-Data for this project was collected from the [City of Toronto Open Data Portal](https://open.toronto.ca/). Here is a complete list of all the data sources that I gathered:
+Data for this project was obtained from the [City of Toronto Open Data Portal](https://open.toronto.ca/). Here is a complete list of all the data sources that I gathered:
 
 - [Development Applications](https://open.toronto.ca/dataset/development-applications/)
 - [Community Council Boundaries](https://open.toronto.ca/dataset/community-council-boundaries/)
@@ -42,12 +26,24 @@ Data for this project was collected from the [City of Toronto Open Data Portal](
 - [Business Improvement Areas](https://open.toronto.ca/dataset/business-improvement-areas/)
 - [Site and Area Specific Policies](https://open.toronto.ca/dataset/site-and-area-specific-policies/)
 - [Zoning Bylaw No. 569-2013](https://open.toronto.ca/dataset/zoning-by-law/)
-
+  
 ## A Few Notes
 
 - I arbitrarily decided to only look at applications that have been applied for on or after May 3rd 2017. I chose this date because it was the day that the Toronto Local Appeal Body (TLAB) came into effect.
   
 - My definition of denied applications include those that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied, and therefore should be labeled as such. I know it is common for applications to be appealed because a decision was not made in the alloted review time set out in the Planning Act. However, based on the way the city stores their data, I cannot determine whether this is the case. I decided it would be best to proceed on the assumption that all applications were formally denied.
+
+
+## Model Performance
+
+A Logistic Regression and Random Forest model were used to predict the outcome of applications. Precision was the preferred evaluation metric to compare the performance of the two models, since it is far more costly to have false positives in this particular business context. An example of a false positive here would be a case where the predicted outcome of an application is approved but in actuality it was denied. 
+
+The Random Forest model outperformed the logistic on a precision basis, and was therefore used as the model to predict the estimated approval likelihood of an application. Here is a breakdown of some of the other performance metrics that were evaluated.
+
+| Model                 | Accuracy       | Precision   | Recall    | ROC AUC |
+| -------------         |:-------------: | :-----:     | :-----:   | :-----: |
+| Logistic Regression   | 69%            |  69%        | 92%       | 60%     |
+| Random Forest         | 71%            |  72%        | 89%       | 64%     |
 
 ## Data Wrangling
 
