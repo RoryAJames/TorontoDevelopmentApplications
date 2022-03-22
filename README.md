@@ -4,7 +4,8 @@ This repository is still a work in progress!
 
 ## Project Overview
 
-This project will explore development applications in the City of Toronto and compare applications based on their development approval status.
+An app that allows users to view where development applications in the City of Toronto have been approved, or denied. [Click here to check out the app](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py) 
+
 ## The Inspiration and Business Case
 
 The inspiration for this project come to me from two places:
