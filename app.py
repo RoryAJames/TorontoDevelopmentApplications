@@ -4,7 +4,7 @@ from apps.about import show_about_page
 from apps.explore_page import show_explore_page
 from apps.predict_page import show_predict_page
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 
 with st.sidebar:
     selected = option_menu("Main Menu",
