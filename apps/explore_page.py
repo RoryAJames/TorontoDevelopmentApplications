@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 
 @st.cache
 def get_data():
-    df = pd.read_csv('data\explore_page_data.csv')
+    df = pd.read_csv('data/explore_page_data.csv')
     return df
 
 df = get_data()
