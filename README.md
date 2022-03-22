@@ -1,10 +1,12 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py)
+
 # Toronto Development Applications
 
 This repository is still a work in progress!
 
 ## Project Overview
 
-An app that allows users to view where development applications in the City of Toronto have been approved, or denied. [Click here to check out the app](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py) 
+An application that allows users to filter and view development application data in the City of Toronto based on geospatial parameters. Users can also predict the likelihood that a hypothetical application will receive approval based on the parameters that the user provides. [Check out there app here!](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py) 
 
 ## The Inspiration and Business Case
 
