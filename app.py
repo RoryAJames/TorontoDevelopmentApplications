@@ -4,23 +4,25 @@ from apps.about import show_about_page
 from apps.explore_page import show_explore_page
 from apps.predict_page import show_predict_page
 
-st.set_page_config(layout="wide",
+def main():
+
+    st.set_page_config(layout="wide",
                    initial_sidebar_state="expanded")
 
-with st.sidebar:
-    selected = option_menu("Main Menu",
+    with st.sidebar:
+        selected = option_menu("Main Menu",
                            options = ("About", "Explore", "Predict"),
                            icons=("house","search","bullseye"),
                            menu_icon="cast")
 
-if selected == "About":
-    show_about_page()
-elif selected == "Explore":
-    show_explore_page()
-else:
-    show_predict_page()
+    if selected == "About":
+        show_about_page()
+    elif selected == "Explore":
+        show_explore_page()
+    else:
+        show_predict_page()
     
-st.sidebar.info(
+    st.sidebar.info(
         """
         This app was built by Rory James
         
@@ -33,3 +35,6 @@ st.sidebar.info(
         
     """
     )
+
+if __name__ =="main":
+    main()
