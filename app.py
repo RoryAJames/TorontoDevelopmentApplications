@@ -1,10 +1,8 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from apps.about import show_about_page
-from apps.explore_page import show_explore_page, page_load
+from apps.explore_page import show_explore_page
 from apps.predict_page import show_predict_page
-
-page_load()
 
 with st.sidebar:
     selected = option_menu("Main Menu",

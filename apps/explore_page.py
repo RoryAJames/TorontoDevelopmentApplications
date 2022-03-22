@@ -2,9 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-
-def page_load():
-    st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 @st.cache
 def get_data():
