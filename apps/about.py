@@ -10,7 +10,7 @@ def show_about_page():
     
     st.subheader("Explore Applications Based On Approval Status")
     
-    st.write("""Find out where applications have been approved, and where they have been denied. Filter the applications based on a range of geospatial datapoints such as application type,
+    st.write("""Find out where applications have been approved, and where they have been denied. Filter applications based on a range of geospatial datapoints such as application type,
              number of properties, zoning category, average neighourhood income, and more!""")
     
     with st.expander("Click Here To See A Demo."):
@@ -18,7 +18,7 @@ def show_about_page():
     
     st.subheader("Predict The Likelihood That An Application Receives Approval")
     
-    st.write("Use Machine Learning to predict the outcome of an application! Enter an applications parameters and get an estmated likeliehood that the application will be approved.")
+    st.write("Use Machine Learning to predict the outcome of an application! Enter an applications parameters and get an estmated likeliehood that the application will receive approval.")
     
     with st.expander("Click Here To See A Demo."):
         st.image("images/predictpage.gif")
