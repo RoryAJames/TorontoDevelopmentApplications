@@ -124,13 +124,13 @@ def show_explore_page():
             longitude=-79.3832,
             zoom=10),
         
-     layers=[
+        layers=[
             pdk.Layer(
-             'ScatterplotLayer',
-             data=df_selection,
-             get_position='[lon, lat]',
-             get_color='[200, 30, 0, 160]',
-             get_radius=200,
-         ),
-     ],
- ))
+                'ScatterplotLayer',
+                data=df_selection,
+                pickable=True,
+                get_position='[lon, lat]',
+                get_color='[200, 30, 0, 160]',
+                get_radius=200),
+            ],
+        ))
