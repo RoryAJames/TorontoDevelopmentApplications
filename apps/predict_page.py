@@ -104,4 +104,4 @@ def show_predict_page():
         X.astype(float) #Use float since average income is being scaled
     
         final_pred = classifier.predict_proba(X)
-        st.subheader(f"There is an estimated {final_pred[0][1]:.2%} chance that this application receives an approval.") #Print prediction result to screen
+        st.subheader(f"There is an estimated {final_pred[0][1]:.2%} chance that this application receives approval.") #Print prediction result to screen

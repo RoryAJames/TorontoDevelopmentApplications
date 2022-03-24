@@ -6,7 +6,7 @@ def show_about_page():
     
     st.write("""This is a proof of concept application that is designed to help Urban Planners and Real Estate professionals in the City of Toronto. This app providers users with
              an easy way to filter and view development application data based on geospatial parameters. In addition, this app gives users the ability to predict the estimated likelihood that 
-             an application will receive an approval based on parameters that the user provides.""")
+             an application will receive an approval.""")
     
     st.subheader("Explore Applications Based On Approval Status")
     
