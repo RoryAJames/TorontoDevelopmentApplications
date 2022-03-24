@@ -13,16 +13,16 @@ def get_data():
 df = get_data()
 
 def show_explore_page():
-
-    st.title('Explore Development Applications In The City of Toronto')
     
     change_text = """
     <style>
     div.st-cs.st-c5.st-bc.st-ct.st-cu {visibility: hidden;}
-    div.st-cs.st-c5.st-bc.st-ct.st-cu:before {content: "Test"; visibility: visible;}
+    div.st-cs.st-c5.st-bc.st-ct.st-cu:before {content: "Wähle eine Option"; visibility: visible;}
     </style>
     """
     st.markdown(change_text, unsafe_allow_html=True)
+
+    st.title('Explore Development Applications In The City of Toronto')
 
 ##Row 1
     row1_col1, row1_col2, row1_col3 = st.columns([1, 1, 1])
