@@ -120,7 +120,7 @@ def show_explore_page():
         #Set the initial view to coordinates of Toronto
         
         initial_view_state=pdk.ViewState(
-            latitude= 43.7432,
+            latitude= 43.6532,
             longitude=-79.3832,
             zoom=10),
         
