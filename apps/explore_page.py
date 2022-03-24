@@ -15,6 +15,14 @@ df = get_data()
 def show_explore_page():
 
     st.title('Explore Development Applications In The City of Toronto')
+    
+    change_text = """
+    <style>
+    div.st-cs.st-c5.st-bc.st-ct.st-cu {visibility: hidden;}
+    div.st-cs.st-c5.st-bc.st-ct.st-cu:before {content: "Test"; visibility: visible;}
+    </style>
+    """
+    st.markdown(change_text, unsafe_allow_html=True)
 
 ##Row 1
     row1_col1, row1_col2, row1_col3 = st.columns([1, 1, 1])
@@ -112,7 +120,7 @@ def show_explore_page():
     else:
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
-    # Pass the query to a pydeck map  
+    # Pass the query to a pydeck scatterplot  
 
     st.pydeck_chart(pdk.Deck(
         map_style='mapbox://styles/mapbox/light-v9',
