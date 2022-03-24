@@ -19,6 +19,7 @@ def show_explore_page():
     row1_col1, row1_col2, row1_col3 = st.columns([1, 1, 1])
 
     with row1_col1:
+        st.write("Select The Application Status")
         status = st.selectbox("Select The Application Status", df.Status.unique())
 
     with row1_col2:
