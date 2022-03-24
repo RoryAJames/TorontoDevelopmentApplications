@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import pydeck as pdk
 
 st.set_page_config(layout="wide")
 
@@ -112,8 +113,31 @@ def show_explore_page():
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
     #st.map(df_selection, zoom = 10)
-    
-    viewport = {"latitude": 43.67464718939311, "longitude": -79.40097299609391, "zoom": 10}
-    layers = [{"data": df_selection, "type": "ScatterplotLayer"}]
 
-    st.deck_gl_chart(viewport=viewport, layers=layers)
+    st.pydeck_chart(pdk.Deck(
+     map_style='mapbox://styles/mapbox/light-v9',
+     initial_view_state=pdk.ViewState(
+         latitude= 43.67464718939311,
+         longitude=-79.40097299609391,
+         zoom=10
+     ),
+     layers=[
+         pdk.Layer(
+            'HexagonLayer',
+            data=df_selection,
+            get_position='[lon, lat]',
+            radius=200,
+            elevation_scale=4,
+            elevation_range=[0, 1000],
+            pickable=True,
+            extruded=True,
+         ),
+         pdk.Layer(
+             'ScatterplotLayer',
+             data=df_selection,
+             get_position='[lon, lat]',
+             get_color='[200, 30, 0, 160]',
+             get_radius=200,
+         ),
+     ],
+ ))
