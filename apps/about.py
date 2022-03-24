@@ -16,9 +16,9 @@ def show_about_page():
     with st.expander("Click Here To See A Demo."):
         st.image("images/explorepage.gif")
     
-    st.subheader("Predict The Likelihood That An Application Receives Approval")
+    st.subheader("Predict the Likelihood than an Application Receives Approval")
     
-    st.write("Use Machine Learning to predict the outcome of an application! Enter an applications parameters and get an estmated likeliehood that the application will receive approval.")
+    st.write("Use Machine Learning to predict the outcome of an application! Enter an applications parameters and get an estmated likelihood that the application will receive approval.")
     
     with st.expander("Click Here To See A Demo."):
         st.image("images/predictpage.gif")

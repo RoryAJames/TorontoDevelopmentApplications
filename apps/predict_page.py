@@ -16,7 +16,7 @@ scaler = data["income_scaler"]
 
 def show_predict_page():
     
-    st.title('Predict the Likelihood that tn Application Receives Approval')
+    st.title('Predict the Likelihood than an Application Receives Approval')
     
     ## NUMBER OF PROPERTIES
     
