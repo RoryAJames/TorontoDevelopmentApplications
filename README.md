@@ -6,7 +6,7 @@ This repository is still a work in progress!
 
 ## Project Overview
 
-An application that allows users to find out where development applications in the City of Toronto have been approved, and where they have been denied. This app provides users with the ability to filter and view development application data based on a range of geospatial parameters, such as application type, number of properties, zoning category, average neighourhood income, and more! Users can also predict the likelihood that an application will receive an approval based on parameters that the user provides. [Check out there app here!](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py) 
+A Streamlit application that allows users to find out where development applications in the City of Toronto have been approved, and where they have been denied. This app provides users with the ability to filter and view development application data based on geospatial parameters, such as application type, number of properties, zoning category, average neighourhood income, and more! Users can also predict the likelihood that an application will receive approval based on parameters that the user provides. [Check out there app here!](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py) 
 
 ## The Inspiration and Business Case
 
@@ -14,7 +14,7 @@ The inspiration for this project came to me from two places:
 
 1) I wanted to provide an easier way for planners and real estate professionals in Toronto to view development application data. The current way to view this data is through the [City of Toronto Application Information Centre](https://www.toronto.ca/city-government/planning-development/application-information-centre/). While this portal does provide a good service, it doesn't give the user the ability to filter and view the data based on geospatial parameters that the user might be interested in.    
    
-2) I know that it is very costly when a development application is denied. In these situations, the developer is left to either go back to the drawing board, or appeal the decision. While the review and outcome of each application is supposed to be independent, I suspected that the outcome of an application could be predicted based on the details of the application itself. With this in mind, I wanted to build a tool that could help developers during their due diligence phase by providing them with an estimated likelihood that their application will receive an approval. 
+2) I know that it is very costly when a development application is denied. In these situations, the developer is left to either go back to the drawing board, or appeal the decision. While the review and outcome of each application is supposed to be independent, I believe that the outcome of an application can be predicted based on the details of the application itself. As such, I wanted to build a tool that could help developers conduct their due diligence by providing them with a way that allows them to calculate the estimated likelihood that their application will receive approval. 
 
 ## The Data
 
@@ -30,15 +30,17 @@ Data for this project was obtained from the [City of Toronto Open Data Portal](h
   
 ## A Few Notes
 
-- I arbitrarily decided to subset the development application data and build the app using development applications that have been applied for on or after May 3rd 2017. I chose this date because it was the day that the Toronto Local Appeal Body (TLAB) came into effect.
+- I arbitrarily decided to subset the development application data and build this app using development applications that have been applied for on or after May 3rd 2017. I chose this date because it was the day that the Toronto Local Appeal Body (TLAB) came into effect.
   
-- My definition of denied applications include the applications that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied. I know that it is common for applications to be appealed because a decision was delivered in the alloted review time set out in the Planning Act. However, based on the way the city stores their data, I cannot determine whether this is the case. I decided it would be best to proceed on the assumption that all applications were formally denied.
+- My definition of denied applications include the applications that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied. I know that it is common for applications to be appealed because a decision from the city was not delivered in the alloted review time set out in the Planning Act. However, based on the way the city stores the data, I cannot determine whether this is the case. I decided it would be best to proceed on the assumption that all applications were formally denied based on the merits of the application.
   
-- While the prediction abilities of this app are respectable, I know that far more data points are required to justify the apps use in a business setting. In its current state the app is missing the important granular details of the development applications. These are details like the proposed land use, the planning rationale, lot details, unit breakdown, floor space ratio, architectural plans, etc. While these details are made publicly available on the Application Information Centre, they are not easily accessible at scale. While I would like to build a full fledged app that has these details, it would be a massive undertaking and require the work of several data engineers.
+- While I am happy with the prediction abilities of this application, I know that far more data points are required to justify the use of the app in a business setting. In its current state, the app is missing the important granular details of the development applications. These are details like the proposed land use, the planning rationale, lot details, unit breakdown, floor space ratio, architectural plans, etc. While these details are publicly available on the Application Information Centre, they are not easily accessible at scale. While I would like to build a full fledged app that accounts for these details, it would be a massive undertaking and require the work of several data engineers to put it into production.
 
 ## Model Performance
 
-A Logistic Regression and Random Forest model were used to predict the outcome of applications. Precision was the preferred evaluation metric to compare the performance of the two models, since it is far more costly to have false positives in this particular business context. An example of a false positive here would be a case where the predicted outcome of an application is approved but in actuality it was denied. 
+Predicting the estimated likelihood that an application is approved is a binary classification problem.
+
+A Logistic Regression and Random Forest model were used to predict the outcome of applications. Precision was the preferred evaluation metric to compare the performance of the two models, since it is far more costly to have false positives in this particular business context. An example of a false positive here would be a case where the predicted outcome of an application is approved, but in actuality it is denied. 
 
 The Random Forest model outperformed the logistic on a precision basis, and was therefore used as the model to predict the estimated approval likelihood of an application. Here is a breakdown of some of the other performance metrics that were evaluated:
 
