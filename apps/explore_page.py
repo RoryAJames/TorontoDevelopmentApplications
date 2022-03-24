@@ -111,4 +111,9 @@ def show_explore_page():
     else:
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
-    st.map(df_selection, zoom = 10)
+    #st.map(df_selection, zoom = 10)
+    
+    viewport = {"latitude": 43.67464718939311, "longitude": -79.40097299609391, "zoom": 10}
+    layers = [{"data": df_selection, "type": "ScatterplotLayer"}]
+
+    st.deck_gl_chart(viewport=viewport, layers=layers)
