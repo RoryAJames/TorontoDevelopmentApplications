@@ -112,17 +112,18 @@ def show_explore_page():
     else:
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
-    #st.map(df_selection, zoom = 10)
-    
-    # Pass query 
+    # Pass the query to a pydeck map  
 
     st.pydeck_chart(pdk.Deck(
-     map_style='mapbox://styles/mapbox/light-v9',
-     initial_view_state=pdk.ViewState(
-         latitude= 43.6532,
-         longitude=-79.3832,
-         zoom=10
-     ),
+        map_style='mapbox://styles/mapbox/light-v9',
+        
+        #Set the initial view to coordinates of Toronto
+        
+        initial_view_state=pdk.ViewState(
+            latitude= 43.7945,
+            longitude=-79.3832,
+            zoom=10),
+        
      layers=[
             pdk.Layer(
              'ScatterplotLayer',
