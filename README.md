@@ -34,7 +34,7 @@ Data for this project was obtained from the [City of Toronto Open Data Portal](h
   
 - My definition of denied applications include the applications that are currently under appeal, or have received an approval following an appeal. The reason for this is that the application was initially denied. I know that it is common for applications to be appealed because the city did not deliver a decision in the alloted review time set out in the Planning Act. However, based on the way the city presents the data, I cannot determine whether this is the case. I decided it would be best to proceed on the assumption that all applications were formally denied based on the merits of the application.
   
-- While I am happy with the prediction abilities of this application, I know that far more data points are required to justify the use of the app in a business setting. In its current state, the app is missing the important granular details of the development applications. These are details like the proposed land use, the planning rationale, lot details, unit breakdown, floor space ratio, architectural plans, etc. While these details are publicly available on the Application Information Centre, they are not easily accessible at scale. While I would like to build a full fledged app that accounts for these details, it would be a massive undertaking and require the work of several data engineers to put it into production.
+- While I am happy with the prediction abilities of this application, I know that far more data points are required to justify its use in a business setting. In its current state, the app is missing the important granular details of the development applications. These are details like the proposed land use, the planning rationale, lot details, unit breakdown, floor space ratio, architectural plans, etc. While these details are publicly available on the Application Information Centre, they are not easily accessible at scale. While I would like to build a full fledged app that takes these details into consideration, it would be a massive undertaking and require the work of several data engineers to put it into production. Given that this app is just a proof of concept, I opted to only use features that were found to be statistically significant in predicting the outcome of an application. 
 
 ## Model Performance
 
@@ -42,9 +42,9 @@ Predicting the estimated likelihood that an application is approved is a binary 
 
 A Logistic Regression and Random Forest model were first used to predict the outcome of applications - either approved or denied. Precision was the preferred evaluation metric to compare the performance of the two models, since it is far more costly to have false positives in this particular business context. An example of a false positive here would be a case where the predicted outcome of an application is approved, but in actuality it is denied.
 
-Due to imbalances observed in the dataset, I opted to use a Stratified k-fold cross validation method to train the models and compare their prediction performance. 
+Due to imbalances observed in the dataset, I opted to use a stratified five fold cross validation grid search to train the models and compare their prediction performance. 
 
-Random Forest outperformed the logistic regression on a precision basis, and was therefore used as the model in the application. Since the overall goal of the app was to predict the estimated likelihood that an application is approved, I opted to have the model show the probability that an application belonged to the approved class. Here is a breakdown of some of the other performance metrics that were evaluated:
+Random Forest outperformed the logistic regression on a precision basis, and was therefore used as the model in the application. Since the overall goal of the app was to predict the estimated likelihood that an application is approved, I opted to have the model output probability that an application belonged to the approved class. Here is a breakdown of some of the other performance metrics that were evaluated:
 
 | Model                 | Accuracy       | Precision   | Recall    | ROC AUC |
 | -------------         |:-------------: | :-----:     | :-----:   | :-----: |
@@ -53,7 +53,7 @@ Random Forest outperformed the logistic regression on a precision basis, and was
 
 ## Data Wrangling
 
-Here is an overview of the major data wrangling steps I performed:
+Here is an overview of the major data wrangling steps I performed throughout working on this project:
 
 - Applications were placed into a binary category (either approved or denied) based on the key words found in City of Toronto development applications dataset.
   
