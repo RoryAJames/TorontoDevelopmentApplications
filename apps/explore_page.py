@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import pydeck as pdk
 
 st.set_page_config(layout="wide")
@@ -114,7 +113,7 @@ def show_explore_page():
     else:
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
-    # Pass the query to a pydeck scatterplot with tooltip layer
+    # Pass the user query to a pydeck scatterplot with a tooltip layer
     
     scatter_layer = pdk.Layer(
         "ScatterplotLayer",
@@ -137,11 +136,13 @@ def show_explore_page():
     
     view_state = pdk.ViewState(latitude=df['lat'].mean(), longitude=df['lon'].mean(), zoom=10)
     
-    r = pdk.Deck(layers=[layers], map_style='mapbox://styles/mapbox/light-v9',
-                 initial_view_state=view_state, tooltip={"html": "<b>Council: </b> {Council} <br /> "
-                                                                 "<b>Number of Properties: </b> {Number_of_Properties} <br /> "
-                                                                 "<b>Zoning Category: </b> {Zoning_Category} <br /> "
-                                                                 })
+    r = pdk.Deck(layers = [layers],
+                 map_style='mapbox://styles/mapbox/light-v9',
+                 initial_view_state = view_state, 
+                 tooltip = {"html": "<b>Council: </b> {Council} <br /> "
+                          "<b>Number of Properties: </b> {Number_of_Properties} <br /> "
+                          "<b>Zoning Category: </b> {Zoning_Category} <br /> "
+                })
     
     r.to_html()
     
