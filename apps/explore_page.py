@@ -105,6 +105,8 @@ def show_explore_page():
     & Average_Income <= @average_income_upper\
     ''')
     
+    st.dataframe(df_selection)
+    
     #Display how many applications meet the query parameters
 
     if len(df_selection) == 0:
@@ -118,7 +120,7 @@ def show_explore_page():
     
     scatter_layer = pdk.Layer(
         "ScatterplotLayer",
-        data = df,
+        data = df_selection,
         pickable=True,
         get_position='[lon, lat]',
         get_color='[200, 30, 0, 160]',
@@ -127,8 +129,8 @@ def show_explore_page():
     
     text_layer = pdk.Layer(
         'TextLayer',
-        data=df,
-        pickable=False,
+        data = df_selection,
+        pickable=True,
         get_position='[lon, lat]',
         getTextAnchor= '"middle"',
         get_alignment_baseline='"bottom"')
@@ -138,8 +140,8 @@ def show_explore_page():
     view_state = pdk.ViewState(latitude=df['lat'].mean(), longitude=df['lon'].mean(), zoom=10)
     
     r = pdk.Deck(layers=[layers], map_style='mapbox://styles/mapbox/light-v9',
-                 initial_view_state=view_state, tooltip={"html": "<b>Council: </b> {council} <br /> "
-                                                                 "<b>Number of Properties: </b> {num_props} <br /> "
+                 initial_view_state=view_state, tooltip={"html": "<b>Council: </b> {Council} <br /> "
+                                                                 "<b>Number of Properties: </b> {Number_of_Properties} <br /> "
                                                                  })
     
     r.to_html()
