@@ -118,17 +118,11 @@ def show_explore_page():
     
     layer = pdk.Layer(
         "ScatterplotLayer",
-        df_selection,
+        data = df_selection,
         pickable=True,
-        opacity=0.8,
-        filled=True,
-        radius_scale=2,
-        radius_min_pixels=10,
-        radius_max_pixels=500,
-        line_width_min_pixels=0.01,
-        get_position='[Longitude, Latitude]',
-        get_fill_color=[255, 0, 0],
-        get_line_color=[0, 0, 0],
+        get_position='[lon, lat]',
+        get_color='[200, 30, 0, 160]',
+        get_radius=200,
     )
     
     view_state = pdk.ViewState(latitude=df['lat'].mean(), longitude=df['lon'].mean(), zoom=10)
