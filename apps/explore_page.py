@@ -118,7 +118,7 @@ def show_explore_page():
     
     scatter_layer = pdk.Layer(
         "ScatterplotLayer",
-        data = df_selection,
+        data = df,
         pickable=True,
         get_position='[lon, lat]',
         get_color='[200, 30, 0, 160]',
@@ -127,7 +127,7 @@ def show_explore_page():
     
     text_layer = pdk.Layer(
         'TextLayer',
-        data=df_selection,
+        data=df,
         pickable=False,
         get_position='[lon, lat]',
         getTextAnchor= '"middle"',
