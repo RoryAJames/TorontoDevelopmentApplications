@@ -115,6 +115,16 @@ def show_explore_page():
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
     # Pass the query to a pydeck scatterplot  
+    
+    tooltip = {
+             "html":
+                 "<b>Number of Properties:</b> {num_props} <br/>"
+                 "<b>Council:</b> {council} mm<br/>",
+                 "style": {
+                     "backgroundColor": "white",
+                     "color": "black",
+                     }
+                 }
 
     st.pydeck_chart(pdk.Deck(
         map_style='mapbox://styles/mapbox/light-v9',
@@ -133,17 +143,16 @@ def show_explore_page():
                 get_position='[lon, lat]',
                 get_color='[200, 30, 0, 160]',
                 get_radius=200),
+            
+            pdk.Layer(
+                'TextLayer',
+                data=df_selection,
+                pickable=False,
+                get_position='[lon, lat]',
+                get_text="name",
+                getTextAnchor= '"middle"',
+                get_alignment_baseline='"bottom"')
             ],
-        
-         tooltip = {
-             "html":
-                 "<b>Number of Properties:</b> {num_props} <br/>"
-                 "<b>Council:</b> {council} mm<br/>",
-                 "style": {
-                     "backgroundColor": "steelblue",
-                     "color": "black",
-                     }
-                 }
-        
+        tooltip= tooltip
         )
         )
