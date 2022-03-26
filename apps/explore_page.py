@@ -16,7 +16,7 @@ def show_explore_page():
     
     st.title('Explore Development Applications In The City of Toronto')
     
-    st.write('* Denotes Required Fields')
+    st.write("'*' Denotes Required Fields")
 
 ##Row 1
     row1_col1, row1_col2, row1_col3 = st.columns([1, 1, 1])
