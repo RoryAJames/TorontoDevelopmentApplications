@@ -116,7 +116,7 @@ def show_explore_page():
     
     # Pass the query to a pydeck scatterplot
     
-    layer = pdk.Layer(
+    scatter_layer = pdk.Layer(
         "ScatterplotLayer",
         data = df_selection,
         pickable=True,
@@ -125,9 +125,19 @@ def show_explore_page():
         get_radius=200,
     )
     
+    text_layer = pdk.Layer(
+        'TextLayer',
+        data=df_selection,
+        pickable=False,
+        get_position='[lon, lat]',
+        getTextAnchor= '"middle"',
+        get_alignment_baseline='"bottom"')
+    
+    layers = [scatter_layer,text_layer]
+    
     view_state = pdk.ViewState(latitude=df['lat'].mean(), longitude=df['lon'].mean(), zoom=10)
     
-    r = pdk.Deck(layers=[layer], map_style='mapbox://styles/mapbox/light-v9',
+    r = pdk.Deck(layers=[layers], map_style='mapbox://styles/mapbox/light-v9',
                  initial_view_state=view_state, tooltip={"html": "<b>Council: </b> {council} <br /> "
                                                                  "<b>Number of Properties: </b> {num_props} <br /> "
                                                                  })
