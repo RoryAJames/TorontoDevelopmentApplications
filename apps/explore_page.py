@@ -133,7 +133,7 @@ def show_explore_page():
     
     view_state = pdk.ViewState(latitude=df['lat'].mean(), longitude=df['lon'].mean(), zoom=10)
     
-    r = pdk.Deck(layers=[layer], map_style='mapbox://styles/mapbox/satellite-v9',
+    r = pdk.Deck(layers=[layer], map_style='mapbox://styles/mapbox/light-v9',
                  initial_view_state=view_state, tooltip={"html": "<b>Council: </b> {council} <br /> "
                                                                  "<b>Number of Properties: </b> {num_props} <br /> "
                                                                  })
