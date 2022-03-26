@@ -15,8 +15,6 @@ df = get_data()
 def show_explore_page():
     
     st.title('Explore Development Applications In The City of Toronto')
-    
-    st.write("* Denotes Required Fields")
 
 ##Row 1
     row1_col1, row1_col2, row1_col3 = st.columns([1, 1, 1])
@@ -90,7 +88,7 @@ def show_explore_page():
     average_income_upper = average_income[1]
     
 
-#Query the data based on the users selection parameters
+#Query the data based on the users selection
     df_selection = df.query('''
     Status == @status \
     & Number_of_Properties == @num_props \
@@ -106,6 +104,8 @@ def show_explore_page():
     & Average_Income >= @average_income_lower \
     & Average_Income <= @average_income_upper\
     ''')
+    
+    #Display how many applications meet the query parameters
 
     if len(df_selection) == 0:
         st.subheader("There are no applications that meet these parameters.")
@@ -135,4 +135,12 @@ def show_explore_page():
                 get_color='[200, 30, 0, 160]',
                 get_radius=200),
             ],
-        ))
+        
+         tooltip={
+            "html": "<b>Status:</b> {status}"
+            "<br/> <b>Council:</b> {council}",
+            "style": {"color": "white"},
+        },
+        
+        )
+        )
