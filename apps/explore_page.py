@@ -119,7 +119,7 @@ def show_explore_page():
     tooltip = {
              "html":
                  "<b>Number of Properties:</b> {num_props} <br/>"
-                 "<b>Council:</b> {council} mm<br/>",
+                 "<b>Council:</b> {council} <br/>",
                  "style": {
                      "backgroundColor": "white",
                      "color": "black",
@@ -149,7 +149,7 @@ def show_explore_page():
                 data=df_selection,
                 pickable=False,
                 get_position='[lon, lat]',
-                get_text="name",
+                get_text=["Number_of_Properties", "Council"],
                 getTextAnchor= '"middle"',
                 get_alignment_baseline='"bottom"')
             ],
