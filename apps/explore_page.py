@@ -104,9 +104,7 @@ def show_explore_page():
     & Average_Income >= @average_income_lower \
     & Average_Income <= @average_income_upper\
     ''')
-    
-    st.dataframe(df_selection)
-    
+     
     #Display how many applications meet the query parameters
 
     if len(df_selection) == 0:
@@ -116,7 +114,7 @@ def show_explore_page():
     else:
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
-    # Pass the query to a pydeck scatterplot
+    # Pass the query to a pydeck scatterplot with tooltip layer
     
     scatter_layer = pdk.Layer(
         "ScatterplotLayer",
@@ -142,48 +140,9 @@ def show_explore_page():
     r = pdk.Deck(layers=[layers], map_style='mapbox://styles/mapbox/light-v9',
                  initial_view_state=view_state, tooltip={"html": "<b>Council: </b> {Council} <br /> "
                                                                  "<b>Number of Properties: </b> {Number_of_Properties} <br /> "
+                                                                 "<b>Zoning Category: </b> {Zoning_Category} <br /> "
                                                                  })
     
     r.to_html()
     
     st.pydeck_chart(r)
-    
-    """ 
-    
-    tooltip = {
-             "html":
-                 "<b>Number of Properties:</b> {num_props} <br/>"
-                 "<b>Council:</b> {council} <br/>",
-                 "style": {"color": "black"}
-                 }
-
-    st.pydeck_chart(pdk.Deck(
-        map_style='mapbox://styles/mapbox/light-v9',
-        
-        #Set the initial view to coordinates of Toronto
-        initial_view_state=pdk.ViewState(
-            latitude= 43.6532,
-            longitude=-79.3832,
-            zoom=10),
-        
-        layers=[
-            pdk.Layer(
-                'ScatterplotLayer',
-                data=df_selection,
-                pickable=True,
-                get_position='[lon, lat]',
-                get_color='[200, 30, 0, 160]',
-                get_radius=200),
-            
-            pdk.Layer(
-                'TextLayer',
-                data=df_selection,
-                pickable=False,
-                get_position='[lon, lat]',
-                get_text=["name"],
-                getTextAnchor= '"middle"',
-                get_alignment_baseline='"bottom"')
-            ],
-        tooltip= tooltip
-        )
-        ) """
