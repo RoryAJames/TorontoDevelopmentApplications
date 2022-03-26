@@ -114,16 +114,39 @@ def show_explore_page():
     else:
         st.subheader(f"There are {len(df_selection)} applications that meet these parameters.")
     
-    # Pass the query to a pydeck scatterplot  
+    # Pass the query to a pydeck scatterplot
+    
+    layer = pdk.Layer(
+        "ScatterplotLayer",
+        df_selection,
+        pickable=True,
+        opacity=0.8,
+        filled=True,
+        radius_scale=2,
+        radius_min_pixels=10,
+        radius_max_pixels=500,
+        line_width_min_pixels=0.01,
+        get_position='[Longitude, Latitude]',
+        get_fill_color=[255, 0, 0],
+        get_line_color=[0, 0, 0],
+    )
+    
+    view_state = pdk.ViewState(latitude=df['lat'].mean(), longitude=df['lon'].mean(), zoom=10)
+    
+    r = pdk.Deck(layers=[layer], map_style='mapbox://styles/mapbox/satellite-v9',
+                 initial_view_state=view_state, tooltip={"html": "<b>Council: </b> {council} <br /> "
+                                                                 "<b>Number of Properties: </b> {num_props} <br /> "
+                                                                 })
+    
+    st.pydeck_chart(r)
+    
+    """ 
     
     tooltip = {
              "html":
                  "<b>Number of Properties:</b> {num_props} <br/>"
                  "<b>Council:</b> {council} <br/>",
-                 "style": {
-                     "backgroundColor": "white",
-                     "color": "black",
-                     }
+                 "style": {"color": "black"}
                  }
 
     st.pydeck_chart(pdk.Deck(
@@ -149,10 +172,10 @@ def show_explore_page():
                 data=df_selection,
                 pickable=False,
                 get_position='[lon, lat]',
-                get_text=["Number_of_Properties", "Council"],
+                get_text=["name"],
                 getTextAnchor= '"middle"',
                 get_alignment_baseline='"bottom"')
             ],
         tooltip= tooltip
         )
-        )
+        ) """
