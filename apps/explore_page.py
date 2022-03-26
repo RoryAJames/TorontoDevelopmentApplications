@@ -120,7 +120,6 @@ def show_explore_page():
         map_style='mapbox://styles/mapbox/light-v9',
         
         #Set the initial view to coordinates of Toronto
-        
         initial_view_state=pdk.ViewState(
             latitude= 43.6532,
             longitude=-79.3832,
@@ -136,8 +135,15 @@ def show_explore_page():
                 get_radius=200),
             ],
         
-         tooltip={
-            "text": "{status}\n{council}"}
+         tooltip = {
+             "html":
+                 "<b>Number of Properties:</b> {num_props} <br/>"
+                 "<b>Council:</b> {council} mm<br/>",
+                 "style": {
+                     "backgroundColor": "steelblue",
+                     "color": "black",
+                     }
+                 }
         
         )
         )
