@@ -137,10 +137,7 @@ def show_explore_page():
             ],
         
          tooltip={
-            "html": "<b>Status:</b> {df_selection[status]}"
-            "<br/> <b>Council:</b> {df_selection[council]}",
-            "style": {"color": "white"},
-        },
+            "text": "{status}\n{council}"}
         
         )
         )
