@@ -14,6 +14,8 @@ df = get_data()
 def show_explore_page():
     
     st.title('Explore Development Applications In The City of Toronto')
+    
+    st.write('\* Denotes Required Field')
 
 ##Row 1
     row1_col1, row1_col2, row1_col3 = st.columns([1, 1, 1])
@@ -22,17 +24,17 @@ def show_explore_page():
         status = st.selectbox("Select The Application Status", df.Status.unique())
 
     with row1_col2:
-        num_props = st.multiselect("Select The Number of Properties", df.Number_of_Properties.unique())
+        num_props = st.multiselect("Select The Number of Properties *", df.Number_of_Properties.unique())
     
     with row1_col3:
-        council = st.multiselect("Select The Council(s) Of Interest", df.Council.unique())
+        council = st.multiselect("Select The Council(s) Of Interest *", df.Council.unique())
 
  ## Row 2   
 
     row2_col1, row2_col2, row2_col3 = st.columns([1, 1, 1])
 
     with row2_col1:
-        application_type = st.multiselect("Select The Application Type(s)", ('Consent','Minor Variance',
+        application_type = st.multiselect("Select The Application Type(s) *", ('Consent','Minor Variance',
         'Official Plan Rezoning', 'Site Plan Application'))
 
     #Check what has been selected from application type
@@ -58,7 +60,7 @@ def show_explore_page():
         site_plan = 0
         
     with row2_col2:
-        zoning = st.multiselect("Select The Zoning Categories", (df.Zoning_Category.unique()))
+        zoning = st.multiselect("Select The Zoning Categories *", (df.Zoning_Category.unique()))
             
     with row2_col3:
         policies = st.multiselect("Select Additional Policies", ('Secondary Plan Areas','Business Improvement Areas',
