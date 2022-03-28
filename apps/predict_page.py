@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import numpy as np
 import pickle
 
@@ -17,6 +16,8 @@ scaler = data["income_scaler"]
 def show_predict_page():
     
     st.title('Predict the Likelihood than an Application Receives Approval')
+    
+    st.write('\* This application is for educational purposes only.')
     
     ## NUMBER OF PROPERTIES
     
