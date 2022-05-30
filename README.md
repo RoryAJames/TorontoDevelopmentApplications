@@ -1,7 +1,7 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py)
 ## Project Overview
 
-A Streamlit application that allows users to find out where development applications in the City of Toronto have been approved, and where they have been denied. This app provides users with the ability to filter and view development application data based on geospatial parameters, such as application type, number of properties, zoning category, average neighourhood income, and more! Users can also predict the likelihood that an application will receive approval based on application details that the user provides. [Check out there app here!](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py) 
+A Streamlit application that allows users to find out where development applications in the City of Toronto have been approved, and where they have been denied. This app provides users with the ability to filter and view development application data based on geospatial parameters, such as application type, number of properties, zoning category, average neighourhood income, and more! Users can also predict the likelihood that an application will receive approval based on application details that the user provides. [Check out the app here!](https://share.streamlit.io/roryajames/torontodevelopmentapplications/main/app.py) 
 
 ## The Inspiration and Business Case
 
