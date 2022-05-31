@@ -20,7 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random
 #Create an instance of income scaler to be passed to pickle file
 income_scaler = StandardScaler()
 X_train['Average_Income'] = income_scaler.fit_transform(X_train['Average_Income'].values.reshape(-1,1))
-X_train['Average_Income'] = income_scaler.transform(X_train['Average_Income'].values.reshape(-1,1))
+X_test['Average_Income'] = income_scaler.transform(X_test['Average_Income'].values.reshape(-1,1))
 
 #Since the dataset is imbalanced use stratified KFold to make equal size sets
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
